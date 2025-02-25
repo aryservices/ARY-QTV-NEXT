@@ -73,7 +73,7 @@ export default function Index() {
         </center>
       </div>
 
-      <section className="onAir bg-gradient-golden">
+      {/* <section className="onAir bg-gradient-golden">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-3 col-12">
@@ -86,15 +86,15 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="pb-40 relative bg-black">
         <div className="container mx-auto">
           <div className="w-full md:w-12/12 lg:w-12/12 xl:w-12/12 px-4 mt-10"></div>
           <CardVideos title="LATEST VIDEOS" category="latest" />
-          <PlaylistSlider title="ON AIR" id="0" category="DIGITAL: On Air" />
-          <PlaylistSlider title="SHOWS" id="0" category="DIGITAL: Shows" slides="3" />
-          <Blogs category="drama-reviews" title="EDITORIAL" />
+          <PlaylistSlider title="ON AIR" id="0" category="QTV ON AIR" />
+          <PlaylistSlider title="SHOWS" id="0" category="QTV FEATURED" slides="3" />
+          {/* <Blogs category="drama-reviews" title="EDITORIAL" /> */}
 
           {playlists ? playlists.series.slice(0, 4).map((item, i) =>
             config.platform === 'youtube' ? (
@@ -104,8 +104,8 @@ export default function Index() {
             )
           ) : null}
 
-          <PlaylistSlider title="POPULAR" id="2" category="DIGITAL: Popular" />
-          <PlaylistSlider title="ARCHIVE DRAMAS" id="1" category="DIGITAL: Archive" />
+          {/* <PlaylistSlider title="POPULAR" id="2" category="QTV Popular" /> */}
+          <PlaylistSlider title="ARCHIVE DRAMAS" id="1" category="QTV ARCHIVE" />
         </div>
       </section>
     </>

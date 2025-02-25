@@ -112,7 +112,7 @@ googletag.pubads().enableSingleRequest();
           />
         
         </Head>
-        <body className="text-blueGray-700 bg-black antialiased">
+        <body className="text-blueGray-700 custom-site-bg antialiased">
           <div id="page-transition"></div>
           <Main />
           <NextScript />

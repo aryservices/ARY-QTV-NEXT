@@ -100,6 +100,14 @@ export default function Navbar(props) {
                   <i className="text-yellow fas fa-clock text-md leading-lg mr-2" /> EDITORIAL
                 </li>
               </Link>
+              <Link href="/namaz-timings">
+                <li
+                  className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
+                  onClick={() => setNavbarOpen(false)} // Close menu on click
+                >
+                  <i className="text-yellow fas fa-clock text-md leading-lg mr-2" /> NAMAZ TIMINGS
+                </li>
+              </Link>
             </ul>
             {/* Social Icons */}
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">

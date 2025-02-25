@@ -2,7 +2,7 @@ let config = null;
 
 export const fetchConfig = async () => {
   try {
-    const response = await fetch('https://arydigital.tv/api/saved_fetchConfig.php', {
+    const response = await fetch('https://videos.aryqtv.tv/api/saved_fetchConfig.php', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
