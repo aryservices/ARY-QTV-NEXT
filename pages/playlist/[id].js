@@ -75,7 +75,7 @@ const PlaylistId = ({ data1, id, config }) => {
   <link rel="canonical" href={"https://www.arydigital.tv/playlist/" + playlistDetails._id} />
 
   {/* Favicon */}
-  <link rel="icon" type="image/png" href="https://arydigital.tv/img/digital-logo.gif" />
+  <link rel="icon" type="image/png" href="https://arydigital.tv/img/ary-qtv-logo.png" />
 </Head>
 
           <div className="mt-72 bg-black mx-auto mb-minus relative">

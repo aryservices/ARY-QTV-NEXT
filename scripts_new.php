@@ -19,7 +19,7 @@
     Made Easy - Statcounter" href="https://web.archive.org/web/20241006122618/https://statcounter.com/" target="_blank"><img class="statcounter" src="https://web.archive.org/web/20241006122618im_/https://c.statcounter.com/10013079/0/17a64a49/1/" alt="Web Analytics Made Easy - Statcounter" referrerpolicy="no-referrer-when-downgrade"></a></div></noscript>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="https://arydigital.tv/img/digital-logo.gif" type="image/png">
+    <link rel="shortcut icon" href="https://arydigital.tv/img/ary-qtv-logo.png" type="image/png">
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <!--====== Fontawesome css ======-->

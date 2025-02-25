@@ -22,7 +22,7 @@ export default function Navbar(props) {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">
               <a className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 whitespace-nowrap uppercase">
-                <img width="50%" src="/img/digital-logo.gif" alt="Digital Logo" />
+                <img width="50%" src="/img/ary-qtv-logo.png" alt="QTV Logo" />
               </a>
             </Link>
             {/* Hamburger Menu */}
@@ -106,7 +106,7 @@ export default function Navbar(props) {
               <li className="flex items-center">
               <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-1 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://www.facebook.com/arydigital.tv/"
+                  href="https://www.facebook.com/ARYQTV/"
                   target="_blank"
                 >
                   <i className="text-blueGray-400 fab fa-facebook leading-lg " />
@@ -114,7 +114,7 @@ export default function Navbar(props) {
                 </a>
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-1 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://twitter.com/arydigitalasia?lang=en"
+                  href="https://x.com/aryqtv"
                   target="_blank"
                 >
                   <i className="text-blueGray-400 fab fa-twitter leading-lg " />
@@ -122,7 +122,7 @@ export default function Navbar(props) {
                 </a>
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-1 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://www.instagram.com/arydigital.tv/?hl=en"
+                  href="https://www.instagram.com/aryqtvofficial/"
                   target="_blank"
                 >
                   <i className="text-blueGray-400 fab fa-instagram leading-lg " />
@@ -130,7 +130,7 @@ export default function Navbar(props) {
                 </a>
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-1 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://www.tiktok.com/@arydigitalasia?lang=en"
+                  href="https://www.tiktok.com/@aryqtvofficial"
                   target="_blank"
                 >
                   <i className="text-blueGray-400 fab fa-tiktok leading-lg " />
@@ -138,23 +138,23 @@ export default function Navbar(props) {
                 </a>
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-1 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://www.youtube.com/channel/UC4JCksJF76g_MdzPVBJoC3Q"
+                  href="https://www.youtube.com/channel/UCE2oY4S4wOu6WofU2YbfWsw"
                   target="_blank"
                 >
                   <i className="text-blueGray-400 fab fa-youtube leading-lg " />
 
                 </a>
-                <a
+                {/* <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-1 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://webmail.arydigital.tv/"
                   target="_blank"
                 >
                   <i className="text-blueGray-400 fa fa-envelope leading-lg" />
 
-                </a>
+                </a> */}
               </li>
               {/* Add more social icons as needed */}
-              <Link href="https://live.arydigital.tv">
+              <Link href="https://live.aryqtv.tv/">
                 <li className="flex items-center">
                   <button
                     className="bg-yellow text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"

@@ -26,31 +26,31 @@ export default function Footer() {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap text-center lg:text-left">
             <div className="w-full lg:w-3/12 text-left px-2 py-2">
-              <img src="/img/digital-logo.gif" />
+              <img src="/img/ary-qtv-logo.png" />
               <div className="mt-6 lg:mb-0 mb-6">
-                <a  target="_blank" href="https://twitter.com/arydigitalasia?lang=en">
+                <a  target="_blank" href="https://x.com/aryqtv">
                   <button className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                     <i className="fab fa-twitter"></i>
                   </button>
                 </a>
-                <a  target="_blank" href="https://www.facebook.com/arydigital.tv/">
+                <a  target="_blank" href="https://www.facebook.com/ARYQTV/">
                   <button className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                     <i className="fab fa-facebook-square"></i>
                   </button>
                 </a>
-                <a  target="_blank" href="https://www.instagram.com/arydigital.tv/?hl=en">
+                <a  target="_blank" href="https://www.instagram.com/aryqtvofficial/">
                   <button className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                     <i className="fab fa-instagram"></i>
                   </button>
                 </a>
-                <a  target="_blank" href="https://www.tiktok.com/@arydigitalasia?lang=en">
+                <a  target="_blank" href="https://www.tiktok.com/@aryqtvofficial">
                   <button className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                     <i className="fab fa-tiktok"></i>
                   </button>
                 </a>
                 
                 
-                <a  target="_blank" href="https://www.youtube.com/channel/UC4JCksJF76g_MdzPVBJoC3Q">
+                <a  target="_blank" href="https://www.youtube.com/channel/UCE2oY4S4wOu6WofU2YbfWsw">
                   <button className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
                     <i className="fab fa-youtube"></i>
                   </button>
@@ -59,7 +59,7 @@ export default function Footer() {
             </div>
             <div className="w-full lg:w-3/12 text-left px-2 py-2">
               <span className="block uppercase text-yellow text-sm font-semibold mb-2 ">About Us</span>
-              <p className="text-white font-light">Arydigital.tv, is an online entertainment platform which brings you its very own official and original content of ARY Digital. We are the only site which offers official and original content from all your favorite shows of ARY Digital. <a href="/about-us"> Read More..</a>
+              <p className="text-white font-light">ARY QTV is a leading Islamic channel dedicated to spreading the message of Islam through authentic teachings, discussions, and spiritual enlightenment. We provide insightful programs, live transmissions, and educational content for millions of viewers worldwide. <a href="/about-us"> Read More..</a>
               </p>
             </div>
             <div className="w-full lg:w-6/12 text-left">
@@ -68,7 +68,7 @@ export default function Footer() {
                   <span className="block uppercase text-yellow text-sm font-semibold mb-2 text-left">Useful Links</span>
                   <ul className="list-unstyled text-left">
                     <li>
-                      <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="https://arydigital.tv/" target="_blank">Home</a>
+                      <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="/" target="_blank">Home</a>
                     </li>
                     <li>
                       <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="/about-us/" target="_blank">About Us</a>
@@ -88,12 +88,12 @@ export default function Footer() {
                   <span className="block uppercase text-yellow text-sm font-semibold mb-2 text-left">Download Our App</span>
                   <ul className="list-unstyled">
                     <li>
-                      <a className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://play.google.com/store/apps/details?id=com.aryservices.arydigital&amp;hl=en&amp;gl=US"  target="_blank">
+                      <a className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://play.google.com/store/apps/details?id=com.aryservices.qtv&hl=en"  target="_blank">
                         <img src="https://aryzap.com/img/google.png" />
                       </a>
                     </li>
                     <li>
-                      <a className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://apps.apple.com/in/app/ary-digital/id895703637" target="_blank">
+                      <a className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://apps.apple.com/pk/app/ary-qtv-app/id1330604385" target="_blank">
                         <img src="https://aryzap.com/img/apple.png" />
                       </a>
                     </li>
@@ -108,10 +108,10 @@ export default function Footer() {
               <div className="text-sm text-blueGray-500 font-semibold py-1">
                 Copyright © {new Date().getFullYear()}{" "}
                 <a
-                  href="#"
+                  href="https://aryqtv.tv/"
                   className="text-blueGray-500 hover:text-blueGray-800"
                 >
-                  ARY DIGITAL
+                  ARY QTV
                 </a>
                 .
               </div>

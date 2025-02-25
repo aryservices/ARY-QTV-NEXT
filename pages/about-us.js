@@ -34,14 +34,16 @@ const Aboutus = (props) => {
           <div className="wpb_wrapper text-white">
             <h1>About Us</h1>
              <br/>
-            <p className="font-normal"><strong><a href="https://arydigital.tv">Arydigital.tv</a></strong>, is an online entertainment platform which brings you its very own official and original content of ARY Digital. We are the only site which offers official and original content from all your favorite shows of ARY Digital.</p>
+            <p className="font-normal"><strong><a href="https://aryqtv.tv/">ARY QTV</a></strong>,  is a leading Islamic channel dedicated to spreading the message of Islam through authentic teachings, discussions, and spiritual enlightenment. With a commitment to removing misconceptions and promoting harmony, we provide insightful programs, live transmissions, and educational content for millions of viewers worldwide.</p>
             <br/>
-            <h2>Our Exclusive Content</h2>
+            <h2>Our Vision & Content</h2>
             <br/>
-            <p className="font-normal">The dramas to reality shows aired of <em>ARY Digital’s</em> channel everything is available on the website. Explore all this and more on our easily accessible site you can also watch the live transmission of <strong>ARY Digital</strong> on our website. Catch full episodes of all the shows you like at your convenience and you can also share it with your friends.</p>
+            <p className="font-normal">Launched in September 2003, <strong>ARY QTV</strong> has become a premier Global Islamic Satellite TV Channel, delivering Islamic knowledge and guidance to over 144 countries. Our mission is to eliminate misconceptions, encourage religious tolerance, and highlight the true essence of Islam.
+            </p>            
             <br/>
-            <p className="font-normal">If you have any queries <a href="https://arydigital.tv//about-us/">about us</a> check out the contact page.</p>
-           
+            <p>From renowned scholars and spiritual leaders to detailed Quranic interpretations, Hadith explanations, and Hamd/Naat recitations, <strong>ARY QTV</strong> offers a comprehensive Islamic viewing experience. Our platform provides live broadcasts of major religious events, engaging discussions, and educational programs that inspire and guide viewers.</p>            
+            <br/>
+            <p>Explore our official website <a href="https://aryqtv.tv">aryqtv.tv</a> for 24/7 live streaming, recorded shows, and exclusive Islamic content anytime, anywhere.</p>
             </div>
           </div>
         </div>

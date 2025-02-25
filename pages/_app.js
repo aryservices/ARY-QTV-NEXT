@@ -70,12 +70,12 @@ const MyApp = ({ Component, pageProps }) => {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="ARY Digital - Watch Pakistani Dramas & Entertainment Shows Online" />
           <meta name="twitter:description" content="Stream the latest ARY Digital Pakistani dramas, entertainment shows, and exclusive digital content online. Stay updated with trending episodes and celebrity news." />
-          <meta name="twitter:image" content="/img/digital-logo.gif" />
+          <meta name="twitter:image" content="/img/ary-qtv-logo.png" />
           <meta name="twitter:site" content="@ARYDigitalAsia" />
           <meta name="twitter:creator" content="@ARYDigitalAsia" />
         
           {/* Favicon */}
-          <link rel="icon" type="image/png" href="/img/digital-logo.gif" />
+          <link rel="icon" type="image/png" href="/img/ary-qtv-logo.png" />
         
         </Head>
         

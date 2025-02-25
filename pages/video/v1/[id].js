@@ -80,7 +80,7 @@ const SingleVideoid = (props) => {
   <link rel="canonical" href={"https://www.arydigital.tv/video/v1/" + video.id} />
 
   {/* Favicon */}
-  <link rel="icon" type="image/png" href="https://arydigital.tv/img/digital-logo.gif" />
+  <link rel="icon" type="image/png" href="https://arydigital.tv/img/ary-qtv-logo.png" />
 </Head>
 
           <section className="header relative pt-16 items-center flex bg-black">

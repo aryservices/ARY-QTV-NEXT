@@ -86,12 +86,12 @@ export default function Schedule() {
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ARY Digital Drama Schedule - Watch Pakistani Dramas & Entertainment Shows Online" />
   <meta name="twitter:description" content="Check the latest schedule for ARY Digital's Pakistani dramas, entertainment shows, and exclusive digital content. Stay up to date with airing times and upcoming episodes." />
-  <meta name="twitter:image" content="/img/digital-logo.gif" />
+  <meta name="twitter:image" content="/img/ary-qtv-logo.png" />
   <meta name="twitter:site" content="@ARYDigitalAsia" />
   <meta name="twitter:creator" content="@ARYDigitalAsia" />
 
   {/* Favicon */}
-  <link rel="icon" type="image/png" href="/img/digital-logo.gif" />
+  <link rel="icon" type="image/png" href="/img/ary-qtv-logo.png" />
 </Head>
 
       <section className="container mt-20 pt-1 pb-60">
