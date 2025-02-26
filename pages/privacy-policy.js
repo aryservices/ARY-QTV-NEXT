@@ -18,13 +18,13 @@ const PrivacyPolicy = (props) => {
 
   return (
     <>
-      <section className="text-gray-600 body-font bg-black">
+      <section className="text-gray-600 body-font">
         <div className="container px-5 py-20 mx-auto">
           <center>
             <Leaderboard />
           </center>
           <div className="flex flex-wrap mt-10">
-            <div className="wpb_wrapper text-white">
+            <div className="wpb_wrapper text-yellow">
               <h1>Privacy Policy</h1>
               <br/>
               <h2>About ARY QTV</h2>

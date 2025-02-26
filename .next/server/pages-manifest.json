@@ -2,5 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/namaz": "pages/api/namaz.js"
+  "/": "pages/index.js",
+  "/namaz-timings": "pages/namaz-timings.js",
+  "/api/namaz": "pages/api/namaz.js",
+  "/schedule": "pages/schedule.js"
 }

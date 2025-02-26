@@ -80,7 +80,7 @@ export default function PlaylistSlider({ title, id, category }) {
         {playlistTitle}
       </h2> */}
 
-      <h4 className="text-2xl heading mt-40 mobilefont font-bold leading-tight text-gray-800 text-white uppercase">{playlistTitle}</h4>
+      <h4 className="text-2xl heading mt-40 mobilefont font-bold leading-tight text-gray-800 text-yellow uppercase">{playlistTitle}</h4>
 
       <Slider {...settings}>
             {playlists && playlists.series

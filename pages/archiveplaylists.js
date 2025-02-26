@@ -78,7 +78,7 @@ const ArchivePlaylist = ({ data, config }) => {
   };
 
   return (
-    <section className="text-gray-600 body-font bg-black">
+    <section className="text-gray-600 body-font">
       <div className="container py-24 mx-auto">
         <center>
           <Leaderboard />
@@ -145,7 +145,7 @@ const ArchivePlaylist = ({ data, config }) => {
               <div className="text-center mt-5">
                 <button
                   onClick={loadMore}
-                  className="bg-yellow hover:shadow-lg text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                  className="bg-yellow-light hover:shadow-lg text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                 >
                   Load More
                 </button>

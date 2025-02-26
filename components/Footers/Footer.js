@@ -3,7 +3,7 @@
 export default function Footer() {
   return (
     <>
-      <footer className="relative bg-121212 pt-8 pb-6">
+      <footer className="relative bg-yellow pt-8 pb-6">
         <div
           className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
           style={{ transform: "translateZ(0)" }}
@@ -18,7 +18,7 @@ export default function Footer() {
             y="0"
           >
             <polygon
-              className="text-yellow fill-current"
+              className="text-yellow-light2 fill-current"
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
@@ -58,34 +58,34 @@ export default function Footer() {
               </div>
             </div>
             <div className="w-full lg:w-3/12 text-left px-2 py-2">
-              <span className="block uppercase text-yellow text-sm font-semibold mb-2 ">About Us</span>
+              <span className="block uppercase text-yellow-light text-sm font-semibold mb-2 ">About Us</span>
               <p className="text-white font-light">ARY QTV is a leading Islamic channel dedicated to spreading the message of Islam through authentic teachings, discussions, and spiritual enlightenment. We provide insightful programs, live transmissions, and educational content for millions of viewers worldwide. <a href="/about-us"> Read More..</a>
               </p>
             </div>
             <div className="w-full lg:w-6/12 text-left">
               <div className="flex flex-wrap items-top mb-6 text-left">
                 <div className="lg:w-4/12 text-left px-2 py-2">
-                  <span className="block uppercase text-yellow text-sm font-semibold mb-2 text-left">Useful Links</span>
+                  <span className="block uppercase text-yellow-light text-sm font-semibold mb-2 text-left">Useful Links</span>
                   <ul className="list-unstyled text-left">
                     <li>
-                      <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="/" target="_blank">Home</a>
+                      <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="/" >Home</a>
                     </li>
                     <li>
-                      <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="/about-us/" target="_blank">About Us</a>
+                      <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="/about-us/" >About Us</a>
                     </li>
                     <li>
-                      <a className="text-white hover:text-white-800 font-semibold block pb-2 text-sm" href="/blogs/" target="_blank">Blogs</a>
+                      <a className="text-white hover:text-white-800 font-semibold block pb-2 text-sm" href="/blogs/" >Blogs</a>
                     </li>
                     <li>
-                      <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="contact-us" target="_blank">Contact Us</a>
+                      <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="contact-us" >Contact Us</a>
                     </li>
                     <li>
-                      <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="privacy-policy" target="_blank">Privacy Policy</a>
+                      <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="privacy-policy" >Privacy Policy</a>
                     </li>
                   </ul>
                 </div>
                 <div className="w-full lg:w-4/12 px-2 py-2">
-                  <span className="block uppercase text-yellow text-sm font-semibold mb-2 text-left">Download Our App</span>
+                  <span className="block uppercase text-yellow-light text-sm font-semibold mb-2 text-left">Download Our App</span>
                   <ul className="list-unstyled">
                     <li>
                       <a className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://play.google.com/store/apps/details?id=com.aryservices.qtv&hl=en"  target="_blank">
@@ -105,11 +105,11 @@ export default function Footer() {
           <hr className="my-6 border-blueGray-300" />
           <div className="flex flex-wrap items-center md:justify-between justify-center">
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-              <div className="text-sm text-blueGray-500 font-semibold py-1">
+              <div className="text-sm text-light font-semibold py-1">
                 Copyright © {new Date().getFullYear()}{" "}
                 <a
                   href="https://aryqtv.tv/"
-                  className="text-blueGray-500 hover:text-blueGray-800"
+                  className="text-yellow-light hover:text-blueGray-800"
                 >
                   ARY QTV
                 </a>

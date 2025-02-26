@@ -29,7 +29,7 @@ const PlaylistId = ({ data1, id, config }) => {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>
-    {playlistDetails.title + " " + (playlistDetails.seriesType === "show" ? "Drama" : "Show") + " | Watch All Latest Episodes in HD"}
+    {playlistDetails.title + " Show | Watch All Latest Episodes in HD"}
   </title>
   <meta name="description" content={
     "Enjoy all episodes of " + playlistDetails.title + 
@@ -38,9 +38,8 @@ const PlaylistId = ({ data1, id, config }) => {
   <meta name="keywords" content={
     playlistDetails.title + ", " + playlistDetails.title + " episodes, latest " + 
     playlistDetails.title + " episodes, " + playlistDetails.title + " watch online, " + 
-    playlistDetails.title + " HD episodes, drama episodes, latest drama, watch " + 
-    playlistDetails.title + " online, " + playlistDetails.title + " " + 
-    (playlistDetails.seriesType === "show" ? "Drama" : "Show") + " ary digital, ary digital"
+    playlistDetails.title + " HD episodes, watch " + 
+    playlistDetails.title + " online, " + playlistDetails.title + " Show ary qtv, ary qtv"
   } />
   <meta name="robots" content="index, follow" />
   <meta name="language" content="English" />
@@ -48,20 +47,20 @@ const PlaylistId = ({ data1, id, config }) => {
   {/* Open Graph / Facebook */}
   <meta property="og:type" content="video.tv_show" />
   <meta property="og:title" content={
-    playlistDetails.title + " " + (playlistDetails.seriesType === "show" ? "Drama" : "Show") + " | Watch All Latest Episodes in HD"
+    playlistDetails.title + " | Watch All Latest Episodes in HD"
   } />
   <meta property="og:description" content={
     "Enjoy all episodes of " + playlistDetails.title + 
     " in stunning HD quality. Read reviews, share your thoughts, and stay updated with the latest episodes online."
   } />
   <meta property="og:image" content={config.appImagePath + playlistDetails.imageCoverMobile} />
-  <meta property="og:url" content={"https://www.arydigital.tv/playlist/" + playlistDetails._id} />
+  <meta property="og:url" content={"https://aryqtv.tv/playlist/" + playlistDetails._id} />
 
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={
-    playlistDetails.title + " " + (playlistDetails.seriesType === "show" ? "Drama" : "Show") + " | Watch All Latest Episodes in HD"
+    playlistDetails.title + " Drama | Watch All Latest Episodes in HD"
   } />
   <meta name="twitter:description" content={
     "Enjoy all episodes of " + playlistDetails.title + 
@@ -72,10 +71,10 @@ const PlaylistId = ({ data1, id, config }) => {
   <meta name="twitter:creator" content="@ARYDigitalAsia" />
 
   {/* Canonical URL */}
-  <link rel="canonical" href={"https://www.arydigital.tv/playlist/" + playlistDetails._id} />
+  <link rel="canonical" href={"https://aryqtv.tv/playlist/" + playlistDetails._id} />
 
   {/* Favicon */}
-  <link rel="icon" type="image/png" href="https://arydigital.tv/img/ary-qtv-logo.png" />
+  <link rel="icon" type="image/png" href="https://aryqtv.tv/img/ary-qtv-logo.png" />
 </Head>
 
           <div className="mt-72 bg-black mx-auto mb-minus relative">

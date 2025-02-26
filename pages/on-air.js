@@ -36,7 +36,7 @@ const OnAir = (props) => {
         <title>ARY Digital On Air</title>
 
       </Head>
-      <section className="text-gray-600 body-font bg-black">
+      <section className="text-gray-600 body-font">
         <div className="container py-24 mx-auto">
           <center>
             <Leaderboard />

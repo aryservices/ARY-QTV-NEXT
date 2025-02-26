@@ -3,6 +3,7 @@ let config = null;
 export const fetchConfig = async () => {
   try {
     const response = await fetch('https://videos.aryqtv.tv/api/saved_fetchConfig.php', {
+    // const response = await fetch('https://node.aryzap.com/api/apps/64f33a34970dd0a791dc773c', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

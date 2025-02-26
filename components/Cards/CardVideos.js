@@ -88,11 +88,11 @@ export default function CardVideos({ color, title, user, category, latest, playl
       {/* Code block starts */}
       <div className="lg:my-6 md:my-6 sm:my-6 container px-1 py-3 mx-auto flex md:flex-row items-start md:items-center justify-between">
         <div>
-          <h4 className="text-2xl heading mobilefont font-bold leading-tight text-gray-800 text-white uppercase">{title}</h4>
+          <h4 className="text-2xl heading mobilefont font-bold leading-tight text-gray-800 text-yellow uppercase">{title}</h4>
         </div>
         <div className="md:mt-0">
           <Link href="/latestvideos">
-            <button className="text-black transition focus:outline-none duration-150 font-semibold ease-in-out hover:bg-yellow bg-yellow bg-indigo-700 rounded bg-pink px-3 py-2 text-sm">See More</button>
+            <button className="text-light transition focus:outline-none duration-150 font-semibold ease-in-out hover:bg-yellow bg-yellow bg-indigo-700 rounded bg-pink px-3 py-2 text-sm bg-yellow-light">See More</button>
           </Link>
         </div>
       </div>
@@ -111,7 +111,7 @@ export default function CardVideos({ color, title, user, category, latest, playl
                     <Link key={item.id.videoId} href={`/video/v2/${item.contentDetails.videoId}`}>
                       <div className="Extra cursor-pointer">
                         <img alt={item.snippet.title} src={item.snippet.thumbnails.medium.url} className="w-full align-middle rounded-t-lg" />
-                        <h4 className="text-xl font-bold text-white truncate">{item.snippet.title}</h4>
+                        <h4 className="text-xl font-bold text-yellow truncate">{item.snippet.title}</h4>
                       </div>
                     </Link>
                   )
@@ -120,7 +120,7 @@ export default function CardVideos({ color, title, user, category, latest, playl
                   <Link key={item.id} href={`/video/v1/${item.id}`}>
                     <div className="Extra cursor-pointer">
                       <img alt={item.title} src={item.thumbnail_240_url} className="w-full align-middle rounded-t-lg" />
-                      <h4 className="text-xl font-bold text-white truncate">{item.title}</h4>
+                      <h4 className="text-xl font-bold text-yellow truncate">{item.title}</h4>
                     </div>
                   </Link>
                 ))}

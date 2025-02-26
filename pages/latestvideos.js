@@ -25,7 +25,7 @@ const CardVideos = ({ config, playlists, error }) => {
   }
 
   return (
-    <section className="text-gray-600 body-font bg-black">
+    <section className="text-gray-600 body-font">
       <div className="container py-24 mx-auto mobileVideosPadding">
         <center>
           <Leaderboard />
@@ -45,7 +45,7 @@ const CardVideos = ({ config, playlists, error }) => {
                       <Link href={`/video/v2/${item.contentDetails.videoId}`}>
                         <div className="Extra">
                           <img alt={item.snippet.title} src={item.snippet.thumbnails.medium.url} className="w-full align-middle rounded-t-lg" />
-                          <h4 className="text-xl font-bold text-white line-clamp-2">{item.snippet.title}</h4>
+                          <h4 className="text-xl font-bold text-yellow line-clamp-2">{item.snippet.title}</h4>
                         </div>
                       </Link>
                     </div>
@@ -57,7 +57,7 @@ const CardVideos = ({ config, playlists, error }) => {
                     <Link href={`/video/v1/${item.id}`}>
                       <div className="Extra">
                         <img alt={item.title} src={item.thumbnail_240_url} className="w-full align-middle rounded-t-lg" />
-                        <h4 className="text-xl font-bold text-white line-clamp-2">{item.title}</h4>
+                        <h4 className="text-xl font-bold text-yellow line-clamp-2">{item.title}</h4>
                       </div>
                     </Link>
                   </div>

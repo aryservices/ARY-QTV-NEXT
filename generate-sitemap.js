@@ -1,13 +1,14 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
 
-const SITE_URL = 'https://arydigital.tv'; // Replace with your domain
+const SITE_URL = 'https://aryqtv.tv'; // Replace with your domain
 
 // Define the API endpoints
 const APIs = [
-  'https://node.aryzap.com/api/series/byCatID/DIGITAL:%20Archive/PK', // Archive Dramas
-  'https://node.aryzap.com/api/series/byCatID/DIGITAL:%20Popular/PK', // Popular Dramas
-  'https://node.aryzap.com/api/series/byCatID/DIGITAL:%20On%20Air/PK', // Latest Dramas
+  'https://node.aryzap.com/api/series/byCatID/QTV%20ARCHIVE/PK', // Archive Dramas
+  'https://node.aryzap.com/api/series/byCatID/QTV%20ON%20AIR/PK', // Popular Dramas
+  'https://node.aryzap.com/api/series/byCatID/QTV%20FEATURED/PK', // Latest Dramas
+  'https://node.aryzap.com/api/series/byCatID/QTV%20single%20series/PK', // Latest Dramas
 ];
 
 async function fetchAllPlaylists() {

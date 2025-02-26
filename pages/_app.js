@@ -58,21 +58,31 @@ const MyApp = ({ Component, pageProps }) => {
          <Head>
           {/* Primary Meta Tags */}
          
-          <title>ARY Digital - Watch Pakistani Dramas & Entertainment Shows Online</title>
-          <meta name="description" content="Stream the latest ARY Digital Pakistani dramas, entertainment shows, and exclusive digital content online. Stay updated with trending episodes and celebrity news." />
-          <meta name="keywords" content="ARY Digital, Pakistani Dramas, ARY Shows, Online Dramas, Latest Pakistani Dramas, ARY Entertainment, old dramas" />
-          <meta name="author" content="ARY Digital" />
+          <title>ARY QTV | 1st Religious Channel from Pakistan</title>
+
+          {/* <!-- Primary Meta Tags --> */}
+          <meta name="description" content="Stream ARY QTV, the first religious channel from Pakistan. Explore Islamic programs, Naats, Hadeeth, and Tilawat-e-Quran with renowned scholars." />
+          <meta name="keywords" content="ARY QTV, Religious Channel, Naats, Hadeeth, Tilawat-e-Quran, Pakistan" />
+          <meta name="author" content="ARY QTV" />
           <meta name="robots" content="index, follow" />
-          
-        
-        
-          {/* Twitter Card */}
+
+          {/* <!-- Open Graph / Facebook --> */}
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://aryqtv.tv/" />
+          <meta property="og:title" content="ARY QTV | 1st Religious Channel from Pakistan" />
+          <meta property="og:description" content="Stream ARY QTV, the first religious channel from Pakistan. Explore Islamic programs, Naats, Hadeeth, and Tilawat-e-Quran with renowned scholars." />
+          <meta property="og:image" content="https://aryqtv.tv/img/ary-qtv-logo.png" />
+          <meta property="og:site_name" content="ARY QTV" />
+
+          {/* <!-- Twitter Card --> */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="ARY Digital - Watch Pakistani Dramas & Entertainment Shows Online" />
-          <meta name="twitter:description" content="Stream the latest ARY Digital Pakistani dramas, entertainment shows, and exclusive digital content online. Stay updated with trending episodes and celebrity news." />
-          <meta name="twitter:image" content="/img/ary-qtv-logo.png" />
-          <meta name="twitter:site" content="@ARYDigitalAsia" />
-          <meta name="twitter:creator" content="@ARYDigitalAsia" />
+          <meta name="twitter:title" content="ARY QTV – Religious Programs, Naats & Quran" />
+          <meta name="twitter:description" content="Watch ARY QTV for Islamic programs, Naats, Hadeeth, Tilawat-e-Quran, and more. Stay enlightened with authentic teachings by renowned scholars." />
+          <meta name="twitter:image" content="https://aryqtv.tv/img/ary-qtv-logo.png" />
+          <meta name="twitter:site" content="@ARYQTV" />
+          <meta name="twitter:creator" content="@ARYQTV" />
+
+
         
           {/* Favicon */}
           <link rel="icon" type="image/png" href="/img/ary-qtv-logo.png" />

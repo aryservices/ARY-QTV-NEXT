@@ -16,7 +16,7 @@ export default function Navbar(props) {
 
   return (
     <>
-      <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-181818 shadow">
+      <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-181818 shadow bg-yellow">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           {/* Logo */}
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -49,7 +49,7 @@ export default function Navbar(props) {
                   className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
                   onClick={() => setNavbarOpen(false)} // Close menu on click
                 >
-                  <i className="text-yellow fas fa-home text-md leading-lg mr-2" /> Home
+                  <i className="text-yellow-light fas fa-home text-md leading-lg mr-2" /> Home
                 </li>
               </Link>
               <Link href="/latestvideos">
@@ -57,7 +57,7 @@ export default function Navbar(props) {
                   className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
                   onClick={() => setNavbarOpen(false)} // Close menu on click
                 >
-                  <i className="text-yellow fas fa-video text-md leading-lg mr-2" /> Latest Videos
+                  <i className="text-yellow-light fas fa-video text-md leading-lg mr-2" /> Latest Videos
                 </li>
               </Link>
               <Link href="/on-air">
@@ -65,7 +65,7 @@ export default function Navbar(props) {
                   className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
                   onClick={() => setNavbarOpen(false)} // Close menu on click
                 >
-                  <i className="text-yellow fas fa-file text-md leading-lg mr-2" /> ON AIR
+                  <i className="text-yellow-light fas fa-file text-md leading-lg mr-2" /> ON AIR
                 </li>
               </Link>
               <Link href="/popularplaylists">
@@ -73,7 +73,7 @@ export default function Navbar(props) {
                   className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
                   onClick={() => setNavbarOpen(false)} // Close menu on click
                 >
-                  <i className="text-yellow fas fa-file text-md leading-lg mr-2" /> Popular
+                  <i className="text-yellow-light fas fa-file text-md leading-lg mr-2" /> Popular
                 </li>
               </Link>
               <Link href="/archiveplaylists">
@@ -81,7 +81,7 @@ export default function Navbar(props) {
                   className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
                   onClick={() => setNavbarOpen(false)} // Close menu on click
                 >
-                  <i className="text-yellow fas fa-archive text-md leading-lg mr-2" /> Archive
+                  <i className="text-yellow-light fas fa-archive text-md leading-lg mr-2" /> Archive
                 </li>
               </Link>
               <Link href="/schedule">
@@ -89,23 +89,23 @@ export default function Navbar(props) {
                   className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
                   onClick={() => setNavbarOpen(false)} // Close menu on click
                 >
-                  <i className="text-yellow fas fa-clock text-md leading-lg mr-2" /> Schedule
+                  <i className="text-yellow-light fas fa-history text-md leading-lg mr-2" /> Schedule
                 </li>
               </Link>
-              <Link href="/blogs">
+              {/* <Link href="/blogs">
                 <li
                   className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
                   onClick={() => setNavbarOpen(false)} // Close menu on click
                 >
-                  <i className="text-yellow fas fa-clock text-md leading-lg mr-2" /> EDITORIAL
+                  <i className="text-yellow-light fas fa-clock text-md leading-lg mr-2" /> EDITORIAL
                 </li>
-              </Link>
+              </Link> */}
               <Link href="/namaz-timings">
                 <li
                   className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
                   onClick={() => setNavbarOpen(false)} // Close menu on click
                 >
-                  <i className="text-yellow fas fa-clock text-md leading-lg mr-2" /> NAMAZ TIMINGS
+                  <i className="text-yellow-light fas fa-pray text-md leading-lg mr-2" /> NAMAZ TIMINGS
                 </li>
               </Link>
             </ul>
@@ -117,7 +117,7 @@ export default function Navbar(props) {
                   href="https://www.facebook.com/ARYQTV/"
                   target="_blank"
                 >
-                  <i className="text-blueGray-400 fab fa-facebook leading-lg " />
+                  <i className="text-yellow-light fab fa-facebook leading-lg " />
                   {/* <span className="lg:hidden inline-block ml-2">Share</span> */}
                 </a>
                 <a
@@ -125,7 +125,7 @@ export default function Navbar(props) {
                   href="https://x.com/aryqtv"
                   target="_blank"
                 >
-                  <i className="text-blueGray-400 fab fa-twitter leading-lg " />
+                  <i className="text-yellow-light fab fa-twitter leading-lg " />
                   {/* <span className="lg:hidden inline-block ml-2">Tweet</span> */}
                 </a>
                 <a
@@ -133,7 +133,7 @@ export default function Navbar(props) {
                   href="https://www.instagram.com/aryqtvofficial/"
                   target="_blank"
                 >
-                  <i className="text-blueGray-400 fab fa-instagram leading-lg " />
+                  <i className="text-yellow-light fab fa-instagram leading-lg " />
                   {/* <span className="lg:hidden inline-block ml-2">Star</span> */}
                 </a>
                 <a
@@ -141,7 +141,7 @@ export default function Navbar(props) {
                   href="https://www.tiktok.com/@aryqtvofficial"
                   target="_blank"
                 >
-                  <i className="text-blueGray-400 fab fa-tiktok leading-lg " />
+                  <i className="text-yellow-light fab fa-tiktok leading-lg " />
        
                 </a>
                 <a
@@ -149,7 +149,7 @@ export default function Navbar(props) {
                   href="https://www.youtube.com/channel/UCE2oY4S4wOu6WofU2YbfWsw"
                   target="_blank"
                 >
-                  <i className="text-blueGray-400 fab fa-youtube leading-lg " />
+                  <i className="text-yellow-light fab fa-youtube leading-lg " />
 
                 </a>
                 {/* <a
@@ -165,7 +165,7 @@ export default function Navbar(props) {
               <Link href="https://live.aryqtv.tv/">
                 <li className="flex items-center">
                   <button
-                    className="bg-yellow text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                    className="text-light bg-yellow-light active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                     type="button"
                   >
                     <i className="fas fa-tv"></i> Watch LIVE

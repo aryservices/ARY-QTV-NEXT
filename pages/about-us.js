@@ -25,13 +25,13 @@ const Aboutus = (props) => {
     
 
 
-      <section className="text-gray-600 body-font bg-black">
+      <section className="text-gray-600 body-font ">
         <div className="container px-5 py-20 mx-auto">
           <center>
             <Leaderboard />
           </center>
           <div className="flex flex-wrap mt-10">
-          <div className="wpb_wrapper text-white">
+          <div className="wpb_wrapper text-yellow">
             <h1>About Us</h1>
              <br/>
             <p className="font-normal"><strong><a href="https://aryqtv.tv/">ARY QTV</a></strong>,  is a leading Islamic channel dedicated to spreading the message of Islam through authentic teachings, discussions, and spiritual enlightenment. With a commitment to removing misconceptions and promoting harmony, we provide insightful programs, live transmissions, and educational content for millions of viewers worldwide.</p>

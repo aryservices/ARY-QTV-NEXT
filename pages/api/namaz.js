@@ -6,8 +6,8 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'City parameter is required' });
   }
 
-  const apiUrl = type === 'weekly' 
-    ? `https://muslimsalat.com/${encodeURIComponent(city)}/weekly/3.json`
+  const apiUrl = type === 'monthly' 
+    ? `https://muslimsalat.com/${encodeURIComponent(city)}/monthly/3.json`
     : `https://muslimsalat.com/${encodeURIComponent(city)}/3.json`;
 
   try {
