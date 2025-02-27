@@ -109,7 +109,7 @@ const Namaz = () => {
             <div className="wpb_wrapper text-dark w-full">
               <div className="flex justify-between items-center">
                 <select
-                  className="p-2 border rounded text-black w-100 custom-site-bg border-secondary"
+                  className="p-2 border rounded text-black w-100"
                   onChange={(e) => setCity(e.target.value)}
                   value={city}
                 >

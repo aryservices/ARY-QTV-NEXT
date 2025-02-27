@@ -30,15 +30,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/namaz-timings": [
+    "/latestvideos": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/namaz-timings.js"
+      "static/chunks/pages/latestvideos.js"
     ],
-    "/playlist/[id]": [
+    "/on-air": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/playlist/[id].js"
+      "static/chunks/pages/on-air.js"
+    ],
+    "/popularplaylists": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/popularplaylists.js"
     ],
     "/schedule": [
       "static/chunks/webpack.js",
