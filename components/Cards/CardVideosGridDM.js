@@ -80,9 +80,9 @@ export default function CardVideosGridDM({ color, title, user, category }) {
 
   return (
     <>
-      <section className="text-gray-600 body-font bg-black">
+      <section className="text-gray-600 body-font">
         <div className="container mx-auto">
-          {/* <h3 className="text-xl font-bold text-white truncate">
+          {/* <h3 className="text-xl font-bold text-yellow truncate">
                 {playlists.title}
             </h3> */}
           <div className="flex flex-wrap">
@@ -99,7 +99,7 @@ export default function CardVideosGridDM({ color, title, user, category }) {
                         src={item.thumbnail_240_url}
                         className="w-full align-middle rounded-t-lg"
                       />
-                      <h4 className="text-xl font-bold text-white line-clamp-2">
+                      <h4 className="text-xl font-bold text-yellow line-clamp-2">
                         {item.title}
                       </h4>
                     </div>
@@ -107,7 +107,7 @@ export default function CardVideosGridDM({ color, title, user, category }) {
                 </div>
               ))
             ) : (
-              <p className="text-white">No playlists available</p>
+              <p className="text-yellow">No playlists available</p>
             )}
           </div>
 

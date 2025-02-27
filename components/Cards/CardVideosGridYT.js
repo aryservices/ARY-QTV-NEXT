@@ -51,7 +51,7 @@ export default function CardVideosGrid({ color, title, user, category, platform 
 
   return (
     <>
-      <section className="text-gray-600 body-font bg-black">
+      <section className="text-gray-600 body-font">
         <div className="container mx-auto">
           <div className="flex flex-wrap">
             {playlists && playlists.map((item, i) =>
@@ -69,7 +69,7 @@ export default function CardVideosGrid({ color, title, user, category, platform 
                         src={item.snippet.thumbnails.medium.url}
                         className="w-full align-middle rounded-t-lg"
                       />
-                      <h4 className="text-xl font-bold text-white line-clamp-2">
+                      <h4 className="text-xl font-bold text-yellow line-clamp-2">
                         {item.snippet.title}
                       </h4>
                     </div>
@@ -81,7 +81,7 @@ export default function CardVideosGrid({ color, title, user, category, platform 
 
           {isLoading && (
             <div className="text-center mt-5">
-              <p className="text-white">Loading...</p>
+              <p className="text-yellow">Loading...</p>
             </div>
           )}
 

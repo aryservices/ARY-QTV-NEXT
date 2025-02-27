@@ -112,7 +112,7 @@ useEffect(() => {
   <link rel="icon" type="image/png" href="https://arydigital.tv/img/ary-qtv-logo.png" />
 </Head>
 
-          <section className="header relative pt-16 items-center flex bg-black">
+          <section className="header relative pt-16 items-center flex">
 
             <div className="container mx-auto items-center flex flex-wrap">
               <div className="w-full md:w-12/12 lg:w-12/12 xl:w-12/12 px-4 mt-3">
@@ -140,7 +140,7 @@ useEffect(() => {
 
 
             
-                <h3 className="text-xl font-bold text-white truncate">
+                <h3 className="text-xl font-bold text-yellow truncate">
                   {video.snippet.title}
                 </h3>
               </div>
@@ -158,12 +158,12 @@ useEffect(() => {
 
           </section>
 
-          <section className="pt-40 pb-40 relative bg-black">
+          <section className="pt-40 pb-40 relative">
 
             <div className="container mx-auto">
-            <h4 className="text-2xl heading mobilefont font-bold leading-tight text-gray-800 text-white mt-40">RELATED VIDEOS</h4>
+            <h4 className="text-2xl heading mobilefont font-bold leading-tight text-gray-800 text-yellow mt-40">RELATED VIDEOS</h4>
 
-              {/* <h2 className="text-2xl heading text-white font-semibold leading-normal">
+              {/* <h2 className="text-2xl heading text-yellow font-semibold leading-normal">
                 OTHER EPISODES
               </h2> */}
               <CardVideosGridYT category={related} />

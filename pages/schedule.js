@@ -60,9 +60,9 @@ export default function Schedule() {
       <div className="flex justify-center items-center min-h-screen">
          <div className="my-32 mx-auto max-w-sm text-center relative z-50 top-0">
         <div className="block mb-4">
-          <i className="fas fa-circle-notch animate-spin text-white mx-auto text-6xl"></i>
+          <i className="fas fa-circle-notch animate-spin text-yellow mx-auto text-6xl"></i>
         </div>
-        <h4 className="text-lg font-medium text-white">
+        <h4 className="text-lg font-medium text-yellow">
         Loading...
         </h4>
       </div>
@@ -131,20 +131,20 @@ export default function Schedule() {
 
           <div className="tab-pane fade show active" id="Monday" role="tabpanel" aria-labelledby="contact-tab">
           <div className="flex flex-wrap">
-            {data ? data.Schedule.filter(drama => drama.dramaDays.monday).map((drama, index) => (
+            {data ? data.Schedule.filter(drama => drama.programDays.monday).map((drama, index) => (
               <div className="w-full lg:w-3/12 sm:w-1/2 px-2 py-2">
                 <center>
                 <Link href={{
-                    pathname: "/playlist/" + drama.dramaPlaylist
+                    pathname: "/playlist/" + drama.programPlaylist
                   }}
                   >
                   <div className="Extra cursor-pointer">
 
-                    <img src={drama.dramaPoster} alt={drama.dramaName} />
+                    <img src={drama.programPoster} alt={drama.programName} />
                     <div className="scheduleContent">
-                    {/* <h2>{drama.dramaName}</h2>
-                    <p>{drama.dramaDesc}</p> */}
-                    <p className="timings">{drama.dramaTime}</p>
+                    {/* <h2>{drama.programName}</h2>
+                    <p>{drama.programDesc}</p> */}
+                    <p className="timings">{drama.programTime}</p>
                     </div>
                   </div>
                   </Link>
@@ -156,20 +156,20 @@ export default function Schedule() {
 
           <div className="tab-pane fade" id="Tuesday" role="tabpanel" aria-labelledby="contact-tab">
           <div className="flex flex-wrap">
-            {data ? data.Schedule.filter(drama => drama.dramaDays.tuesday).map((drama, index) => (
+            {data ? data.Schedule.filter(drama => drama.programDays.tuesday).map((drama, index) => (
               <div className="w-full lg:w-3/12 sm:w-1/2 px-2 py-2">
               <center>
               <Link href={{
-                  pathname: "/playlist/" + drama.dramaPlaylist
+                  pathname: "/playlist/" + drama.programPlaylist
                 }}
                 >
                 <div className="Extra cursor-pointer">
 
-                  <img src={drama.dramaPoster} alt={drama.dramaName} />
+                  <img src={drama.programPoster} alt={drama.programName} />
                   <div className="scheduleContent">
-                  {/* <h2>{drama.dramaName}</h2>
-                  <p>{drama.dramaDesc}</p> */}
-                  <p className="timings">{drama.dramaTime}</p>
+                  {/* <h2>{drama.programName}</h2>
+                  <p>{drama.programDesc}</p> */}
+                  <p className="timings">{drama.programTime}</p>
                   </div>
                 </div>
                 </Link>
@@ -181,20 +181,20 @@ export default function Schedule() {
 
           <div className="tab-pane fade" id="Wednesday" role="tabpanel" aria-labelledby="contact-tab">
           <div className="flex flex-wrap">
-            {data ? data.Schedule.filter(drama => drama.dramaDays.wednesday).map((drama, index) => (
+            {data ? data.Schedule.filter(drama => drama.programDays.wednesday).map((drama, index) => (
               <div className="w-full lg:w-3/12 sm:w-1/2 px-2 py-2">
               <center>
               <Link href={{
-                  pathname: "/playlist/" + drama.dramaPlaylist
+                  pathname: "/playlist/" + drama.programPlaylist
                 }}
                 >
                 <div className="Extra cursor-pointer">
 
-                  <img src={drama.dramaPoster} alt={drama.dramaName} />
+                  <img src={drama.programPoster} alt={drama.programName} />
                   <div className="scheduleContent">
-                  {/* <h2>{drama.dramaName}</h2>
-                  <p>{drama.dramaDesc}</p> */}
-                  <p className="timings">{drama.dramaTime}</p>
+                  {/* <h2>{drama.programName}</h2>
+                  <p>{drama.programDesc}</p> */}
+                  <p className="timings">{drama.programTime}</p>
                   </div>
                 </div>
                 </Link>
@@ -206,20 +206,20 @@ export default function Schedule() {
 
           <div className="tab-pane fade" id="Thursday" role="tabpanel" aria-labelledby="contact-tab">
           <div className="flex flex-wrap">
-            {data ? data.Schedule.filter(drama => drama.dramaDays.thursday).map((drama, index) => (
+            {data ? data.Schedule.filter(drama => drama.programDays.thursday).map((drama, index) => (
               <div className="w-full lg:w-3/12 sm:w-1/2 px-2 py-2">
               <center>
               <Link href={{
-                  pathname: "/playlist/" + drama.dramaPlaylist
+                  pathname: "/playlist/" + drama.programPlaylist
                 }}
                 >
                 <div className="Extra cursor-pointer">
 
-                  <img src={drama.dramaPoster} alt={drama.dramaName} />
+                  <img src={drama.programPoster} alt={drama.programName} />
                   <div className="scheduleContent">
-                  {/* <h2>{drama.dramaName}</h2>
-                  <p>{drama.dramaDesc}</p> */}
-                  <p className="timings">{drama.dramaTime}</p>
+                  {/* <h2>{drama.programName}</h2>
+                  <p>{drama.programDesc}</p> */}
+                  <p className="timings">{drama.programTime}</p>
                   </div>
                 </div>
                 </Link>
@@ -231,20 +231,20 @@ export default function Schedule() {
 
           <div className="tab-pane fade" id="Friday" role="tabpanel" aria-labelledby="contact-tab">
           <div className="flex flex-wrap">
-            {data ? data.Schedule.filter(drama => drama.dramaDays.friday).map((drama, index) => (
+            {data ? data.Schedule.filter(drama => drama.programDays.friday).map((drama, index) => (
               <div className="w-full lg:w-3/12 sm:w-1/2 px-2 py-2">
               <center>
               <Link href={{
-                  pathname: "/playlist/" + drama.dramaPlaylist
+                  pathname: "/playlist/" + drama.programPlaylist
                 }}
                 >
                 <div className="Extra cursor-pointer">
 
-                  <img src={drama.dramaPoster} alt={drama.dramaName} />
+                  <img src={drama.programPoster} alt={drama.programName} />
                   <div className="scheduleContent">
-                  {/* <h2>{drama.dramaName}</h2>
-                  <p>{drama.dramaDesc}</p> */}
-                  <p className="timings">{drama.dramaTime}</p>
+                  {/* <h2>{drama.programName}</h2>
+                  <p>{drama.programDesc}</p> */}
+                  <p className="timings">{drama.programTime}</p>
                   </div>
                 </div>
                 </Link>
@@ -256,20 +256,20 @@ export default function Schedule() {
 
           <div className="tab-pane fade" id="Sunday" role="tabpanel" aria-labelledby="contact-tab">
           <div className="flex flex-wrap">
-            {data ? data.Schedule.filter(drama => drama.dramaDays.sunday).map((drama, index) => (
+            {data ? data.Schedule.filter(drama => drama.programDays.sunday).map((drama, index) => (
               <div className="w-full lg:w-3/12 sm:w-1/2 px-2 py-2">
               <center>
               <Link href={{
-                  pathname: "/playlist/" + drama.dramaPlaylist
+                  pathname: "/playlist/" + drama.programPlaylist
                 }}
                 >
                 <div className="Extra cursor-pointer">
 
-                  <img src={drama.dramaPoster} alt={drama.dramaName} />
+                  <img src={drama.programPoster} alt={drama.programName} />
                   <div className="scheduleContent">
-                  {/* <h2>{drama.dramaName}</h2>
-                  <p>{drama.dramaDesc}</p> */}
-                  <p className="timings">{drama.dramaTime}</p>
+                  {/* <h2>{drama.programName}</h2>
+                  <p>{drama.programDesc}</p> */}
+                  <p className="timings">{drama.programTime}</p>
                   </div>
                 </div>
                 </Link>
@@ -281,20 +281,20 @@ export default function Schedule() {
 
           <div className="tab-pane fade" id="Saturday" role="tabpanel" aria-labelledby="contact-tab">
           <div className="flex flex-wrap">
-          {data ? data.Schedule.filter(drama => drama.dramaDays.saturday).map((drama, index) => (
+          {data ? data.Schedule.filter(drama => drama.programDays.saturday).map((drama, index) => (
               <div className="w-full lg:w-3/12 sm:w-1/2 px-2 py-2">
               <center>
               <Link href={{
-                  pathname: "/playlist/" + drama.dramaPlaylist
+                  pathname: "/playlist/" + drama.programPlaylist
                 }}
                 >
                 <div className="Extra cursor-pointer">
 
-                  <img src={drama.dramaPoster} alt={drama.dramaName} />
+                  <img src={drama.programPoster} alt={drama.programName} />
                   <div className="scheduleContent">
-                  {/* <h2>{drama.dramaName}</h2>
-                  <p>{drama.dramaDesc}</p> */}
-                  <p className="timings">{drama.dramaTime}</p>
+                  {/* <h2>{drama.programName}</h2>
+                  <p>{drama.programDesc}</p> */}
+                  <p className="timings">{drama.programTime}</p>
                   </div>
                 </div>
                 </Link>

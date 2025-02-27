@@ -97,7 +97,7 @@ export default function CardVideosDM({ color, title, user, category, latest, pla
                 <div className="md:mt-0">
                    
                     <a href={"playlist/" + playlist}>
-                    <button className="transition focus:outline-none duration-150  font-semibold	 ease-in-out hover:bg-yellow bg-indigo-700 rounded bg-yellow-light px-3 py-2 text-sm text-white">See More</button>
+                    <button className="transition focus:outline-none duration-150  font-semibold	 ease-in-out hover:bg-yellow bg-indigo-700 rounded px-3 py-2 text-sm text-light-bg bg-yellow">See More</button>
                     </a>
                  
                     

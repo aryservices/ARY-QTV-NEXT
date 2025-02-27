@@ -92,7 +92,7 @@ export default function CardVideos({ color, title, user, category, latest, playl
         </div>
         <div className="md:mt-0">
           <Link href="/latestvideos">
-            <button className="text-light transition focus:outline-none duration-150 font-semibold ease-in-out hover:bg-yellow bg-yellow bg-indigo-700 rounded bg-pink px-3 py-2 text-sm bg-yellow-light">See More</button>
+            <button className="text-light-bg bg-yellow transition focus:outline-none duration-150 font-semibold ease-in-out hover:bg-yellow  bg-indigo-700 rounded bg-pink px-3 py-2 text-sm bg-yellow">See More</button>
           </Link>
         </div>
       </div>

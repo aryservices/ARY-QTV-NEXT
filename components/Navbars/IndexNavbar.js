@@ -5,6 +5,7 @@ import React, { useState } from "react";
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = useState(false); // Boolean for open/close state
   const [searchField, setSearchField] = useState("");
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleChange = (e) => {
     setSearchField(e.target.value);
@@ -16,7 +17,7 @@ export default function Navbar(props) {
 
   return (
     <>
-      <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-181818 shadow bg-yellow">
+      <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2  navbar-expand-lg bg-181818 shadow bg-yellow">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           {/* Logo */}
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -60,7 +61,7 @@ export default function Navbar(props) {
                   <i className="text-yellow-light fas fa-video text-md leading-lg mr-2" /> Latest Videos
                 </li>
               </Link>
-              <Link href="/on-air">
+              {/* <Link href="/on-air">
                 <li
                   className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
                   onClick={() => setNavbarOpen(false)} // Close menu on click
@@ -83,7 +84,35 @@ export default function Navbar(props) {
                 >
                   <i className="text-yellow-light fas fa-archive text-md leading-lg mr-2" /> Archive
                 </li>
-              </Link>
+              </Link> */}
+
+              {/* Programs Submenu */}
+              <li className="relative group">
+                <button
+                  className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                >
+                  <i className="text-yellow-light fas fa-tv text-md leading-lg mr-2" /> Programs
+                  <i className="fas fa-chevron-down ml-2 text-sm"></i>
+                </button>
+                <ul className={`absolute left-0 mt-2 w-48 bg-yellow-light2 custom-dropdown text-yellow shadow-lg rounded-md ${dropdownOpen ? "block" : "hidden"}`}>
+                  <Link href="/on-air">
+                    <li className=" px-4 py-2 hover:text-white hover:bg-yellow cursor-pointer" onClick={() => setDropdownOpen(false)}>
+                      ON AIR
+                    </li>
+                  </Link>
+                  <Link href="/popularplaylists">
+                    <li className=" px-4 py-2 hover:bg-yellow cursor-pointer" onClick={() => setDropdownOpen(false)}>
+                      Popular
+                    </li>
+                  </Link>
+                  <Link href="/archiveplaylists">
+                    <li className=" px-4 py-2 hover:bg-yellow cursor-pointer" onClick={() => setDropdownOpen(false)}>
+                      Archive
+                    </li>
+                  </Link>
+                </ul>
+              </li>
               <Link href="/schedule">
                 <li
                   className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
@@ -106,6 +135,14 @@ export default function Navbar(props) {
                   onClick={() => setNavbarOpen(false)} // Close menu on click
                 >
                   <i className="text-yellow-light fas fa-pray text-md leading-lg mr-2" /> NAMAZ TIMINGS
+                </li>
+              </Link>
+              <Link href="/ramadan-timings">
+                <li
+                  className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
+                  onClick={() => setNavbarOpen(false)} // Close menu on click
+                >
+                  <i className="text-yellow-light fas fa-praying-hands text-md leading-lg mr-2" /> RAMADAN TIMINGS
                 </li>
               </Link>
             </ul>
@@ -163,9 +200,9 @@ export default function Navbar(props) {
               </li>
               {/* Add more social icons as needed */}
               <Link href="https://live.aryqtv.tv/">
-                <li className="flex items-center">
+                <li className="flex items-end">
                   <button
-                    className="text-light bg-yellow-light active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                    className="text-yellow bg-yellow-light2 active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                     type="button"
                   >
                     <i className="fas fa-tv"></i> Watch LIVE

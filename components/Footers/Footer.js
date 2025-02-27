@@ -18,7 +18,7 @@ export default function Footer() {
             y="0"
           >
             <polygon
-              className="text-yellow-light2 fill-current"
+              className="text-yellow-light fill-current"
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>

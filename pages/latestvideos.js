@@ -30,7 +30,7 @@ const CardVideos = ({ config, playlists, error }) => {
         <center>
           <Leaderboard />
         </center>
-        <h2 className="text-white text-center mb-4">{config.title}</h2>
+        <h2 className="text-yellow text-center mb-4">{config.title}</h2>
         <div>
           {isLoading ? (
             <div className="flex justify-center items-center">
