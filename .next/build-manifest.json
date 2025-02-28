@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/schedule": [
+    "/video/v2/[id]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/schedule.js"
+      "static/chunks/pages/video/v2/[id].js"
     ]
   },
   "ampFirstPages": []

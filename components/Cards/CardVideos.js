@@ -86,7 +86,7 @@ export default function CardVideos({ color, title, user, category, latest, playl
   return (
     <>
       {/* Code block starts */}
-      <div className="lg:my-6 md:my-6 sm:my-6 container px-1 mx-auto flex md:flex-row items-start md:items-center justify-between pcm-3">
+      <div className="container px-1  flex md:flex-row items-start md:items-center justify-between pcm-3">
         <div>
           <h4 className="text-2xl heading mobilefont font-black leading-tight text-gray-800 text-yellow uppercase">{title}</h4>
         </div>

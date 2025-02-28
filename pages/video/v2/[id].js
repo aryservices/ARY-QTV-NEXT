@@ -112,7 +112,7 @@ useEffect(() => {
   <link rel="icon" type="image/png" href="https://aryqtv.tv/img/ary-qtv-logo.png" />
 </Head>
 
-          <section className="header relative pt-16 items-center flex">
+          <section className="header relative pt-2 items-center flex">
 
             <div className="container mx-auto items-center flex flex-wrap">
               <div className="w-full md:w-12/12 lg:w-12/12 xl:w-12/12 px-4 mt-3">

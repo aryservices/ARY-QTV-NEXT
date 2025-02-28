@@ -96,7 +96,7 @@ export default function CardVideosYT({ color, title, user, category, latest, pla
   return (
     <>
       {/* Code block starts */}
-      <div className="lg:my-6 md:my-6 sm:my-6 container px-1 py-3 mx-auto flex md:flex-row items-start md:items-center justify-between">
+      <div className="mt-5 container px-1 flex md:flex-row items-start md:items-center justify-between">
         <div>
         <h4 className="text-2xl heading mobilefont font-black leading-tight text-gray-800 text-yellow uppercase">{title}</h4>
         </div>
