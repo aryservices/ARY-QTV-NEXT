@@ -91,6 +91,9 @@ const Ramadan = () => {
     if (!locationFetching && city) {
       fetchPrayerTimes(city);
       fetchWeeklyPrayerTimes(city);
+
+       // Scroll to top smoothly
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     // We'll run whenever city changes or locationFetching changes
   }, [city, locationFetching]);

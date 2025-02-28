@@ -776,3 +776,7 @@ ul.custom-dropdown li:hover{
 .NamazPaddingCustom{
   padding: 3.5rem 0px;
 }
+
+.customSectionPadding{
+  padding-bottom:5rem;
+}

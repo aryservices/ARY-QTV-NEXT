@@ -89,7 +89,7 @@ export default function Index() {
         </div>
       </section> */}
 
-      <section className="pb-40 relative">
+      <section className="customSectionPadding relative">
         <div className="container mx-auto">
           <div className="w-full md:w-12/12 lg:w-12/12 xl:w-12/12 px-4 "></div>
           <CardVideos title="LATEST VIDEOS" category="latest" />

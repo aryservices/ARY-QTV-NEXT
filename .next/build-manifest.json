@@ -15,11 +15,6 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -30,10 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/video/v2/[id]": [
+    "/namaz-timings": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/video/v2/[id].js"
+      "static/chunks/pages/namaz-timings.js"
+    ],
+    "/ramadan-timings": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/ramadan-timings.js"
     ]
   },
   "ampFirstPages": []

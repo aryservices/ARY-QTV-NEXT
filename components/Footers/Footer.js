@@ -73,9 +73,9 @@ export default function Footer() {
                     <li>
                       <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="/about-us/" >About Us</a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a className="text-white hover:text-white-800 font-semibold block pb-2 text-sm" href="/blogs/" >Blogs</a>
-                    </li>
+                    </li> */}
                     <li>
                       <a className="text-white hover:text-black font-semibold block pb-2 text-sm" href="contact-us" >Contact Us</a>
                     </li>

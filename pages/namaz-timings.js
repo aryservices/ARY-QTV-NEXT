@@ -71,9 +71,12 @@ const Namaz = () => {
     if (!locationFetching && city) {
       fetchPrayerTimes(city);
       fetchWeeklyPrayerTimes(city);
+      
+      // Scroll to top smoothly
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    // We'll run whenever city changes or locationFetching changes
   }, [city, locationFetching]);
+  
 
   const fetchPrayerTimes = async (selectedCity) => {
     setLoading(true);
@@ -295,10 +298,10 @@ const Namaz = () => {
 
               <div className="flex flex-wrap gap-3 mb-3 justify-content-center mt-4">
                 <button
-                  onClick={() => setCity("{city}")}
+                  onClick={() => setCity("Karachi")}
                   className="text-light-bg bg-yellow transition focus:outline-none duration-150 font-semibold ease-in-out hover:bg-yellow bg-yellow bg-indigo-700 rounded bg-pink px-3 py-2 text-sm"
                 >
-                  {city}
+                  Karachi
                 </button>
                 <button
                   onClick={() => setCity("Lahore")}
