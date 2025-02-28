@@ -1,0 +1,44 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Allow social media bots
+User-agent: facebookexternalhit/
+Allow: /
+
+User-agent: LinkedInBot
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+# Allow Applebot
+User-agent: Applebot
+Allow: /
+
+# Allow Google's specialized bots
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+Sitemap: https://aryqtv.tv/sitemap.xml
+Sitemap: https://aryqtv.tv/sitemap_ramadan.xml
+Sitemap: https://aryqtv.tv/sitemap_namaz.xml
