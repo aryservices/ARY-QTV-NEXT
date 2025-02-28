@@ -98,7 +98,7 @@ export default function CardVideosYT({ color, title, user, category, latest, pla
       {/* Code block starts */}
       <div className="lg:my-6 md:my-6 sm:my-6 container px-1 py-3 mx-auto flex md:flex-row items-start md:items-center justify-between">
         <div>
-        <h4 className="text-2xl heading mobilefont font-bold leading-tight text-gray-800 text-yellow uppercase">{title}</h4>
+        <h4 className="text-2xl heading mobilefont font-black leading-tight text-gray-800 text-yellow uppercase">{title}</h4>
         </div>
         <div className="md:mt-0">
 
@@ -128,7 +128,7 @@ export default function CardVideosYT({ color, title, user, category, latest, pla
                     src={item.snippet.thumbnails.medium.url}
                     className="w-full align-middle rounded-t-lg"
                   />
-                  <h4 className="text-xl font-bold text-yellow truncate">
+                  <h4 className="text-lg font-bold text-yellow truncate">
                     {item.snippet.title}
                   </h4>
                 </div>

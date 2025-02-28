@@ -19,7 +19,7 @@ const PrivacyPolicy = (props) => {
   return (
     <>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-20 mx-auto">
+        <div className="container px-5 py-10 mx-auto">
           <center>
             <Leaderboard />
           </center>

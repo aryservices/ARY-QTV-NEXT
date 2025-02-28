@@ -45,20 +45,20 @@ class MyDocument extends Document {
             dangerouslySetInnerHTML={{
               __html: `
               <script type="text/javascript">
-              var sc_project=9690498;
-              var sc_invisible=0;
-              var sc_security="85467492";
-              var scJsHost = "https://";
-              document.write("<sc"+"ript type='text/javascript' src='" +
-              scJsHost+
-              "statcounter.com/counter/counter.js'></"+"script>");
-              </script>
-              <noscript><div className="statcounter"><a title="Web Analytics
-              Made Easy - Statcounter" href="https://statcounter.com/"
-              target="_blank"><img className="statcounter"
-              src="https://c.statcounter.com/9690498/0/85467492/0/"
-              alt="Web Analytics Made Easy - Statcounter"
-              referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+                var sc_project=9555754;
+                var sc_invisible=0;
+                var sc_security="7455e167";
+                var scJsHost = "https://";
+                document.write("<sc"+"ript type='text/javascript' src='" +
+                scJsHost+
+                "statcounter.com/counter/counter.js'></"+"script>");
+                </script>
+                <noscript><div class="statcounter"><a title="Web Analytics
+                Made Easy - Statcounter" href="https://statcounter.com/"
+                target="_blank"><img class="statcounter"
+                src="https://c.statcounter.com/9555754/0/7455e167/0/"
+                alt="Web Analytics Made Easy - Statcounter"
+                referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
           `,
             }}
           />
@@ -67,23 +67,13 @@ class MyDocument extends Document {
           <script
             dangerouslySetInnerHTML={{
               __html: `
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    googletag.defineSlot('/67551462/AryDigital-Header_LB', [[728, 90], [320, 100], [970, 250], [320, 50], [970, 90]], 'div-gpt-ad-1493391557003-0').addService(googletag.pubads());
-googletag.defineSlot('/67551462/ARYDigital_Lrec', [[300, 600], [336, 280], [160, 600], [300, 250]], 'div-gpt-ad-1524477251257-0').addService(googletag.pubads());
-googletag.defineSlot('/67551462/ARYDigital-2ndfold_Lrec', [[120, 600], [300, 250], [300, 600], [160, 600], [336, 280]], 'div-gpt-ad-1468398721291-0').addService(googletag.pubads());
-googletag.defineSlot('/67551462/ARYDigital-Videos-In-content_Responsive', [[300, 250], [728, 90]], 'div-gpt-ad-1478262976624-0').addService(googletag.pubads());
-googletag.defineSlot('/67551462/ARYDigital-3rdfold_Lrec', [[300, 250], [336, 280]], 'div-gpt-ad-1520687795891-5').addService(googletag.pubads());
-googletag.defineSlot('/67551462/ARYDigital-Popup', [1, 1], 'div-gpt-ad-1509095020147-0').addService(googletag.pubads());
-googletag.defineSlot('/67551462/Catfish-Videos-Digital_728x90', [[728, 90],[468, 60]], 'div-gpt-ad-1453106189307-0').addService(googletag.pubads());
-googletag.defineSlot('/67551462/AryDigital-Mobile_Lrec', [[320, 100], 'fluid', [120, 600], [336, 280], [160, 600], [300, 250], [300, 600], [320, 50]], 'div-gpt-ad-1713421512375-0').addService(googletag.pubads());
-googletag.defineSlot('/67551462/AryDigital-Mobile-Header_LB', [[320, 50], [300, 250], [320, 100]], 'div-gpt-ad-1713421612857-0').addService(googletag.pubads());
-googletag.defineSlot('/67551462/AryDigital-Mobile-Home_LB', [[320, 50], [300, 250], [320, 100]], 'div-gpt-ad-1713421669214-0').addService(googletag.pubads());
-googletag.defineSlot('/67551462/AryDigital-Home_Mrec', [[336, 280], [300, 250]], 'div-gpt-ad-1713339031134-0').addService(googletag.pubads());
-googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs();
-    googletag.enableServices();
-  });
+              window.googletag = window.googletag || {cmd: []};
+              googletag.cmd.push(function() {
+                googletag.defineSlot('/67551462/Aryqtv_videos_300x250', [[120, 600], [300, 250], [300, 600], [160, 600], [336, 280]], 'div-gpt-ad-1649415057320-0').addService(googletag.pubads());
+            googletag.defineSlot('/67551462/Aryqtv_videos_728x90', [[728, 90], [320, 100], [970, 250], [320, 50], [970, 90]], 'div-gpt-ad-1649415264663-0').addService(googletag.pubads());
+                googletag.pubads().collapseEmptyDivs();
+                googletag.enableServices();
+              });
   `,
             }}
           />
@@ -94,7 +84,7 @@ googletag.pubads().enableSingleRequest();
           />
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-          <script
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `
              (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
@@ -109,7 +99,7 @@ googletag.pubads().enableSingleRequest();
             snaptr('track', 'PAGE_VIEW');
           `,
             }}
-          />
+          /> */}
         
         </Head>
         <body className="text-blueGray-700 custom-site-bg antialiased">

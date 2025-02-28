@@ -111,7 +111,7 @@ export default function CardVideosGridDM({ color, title, user, category }) {
             )}
           </div>
 
-          <div className="text-center mt-5 mb-5">
+          <div className="text-center mt-3 mb-5">
             {prevPage > 0 ? (
               <button
                 onClick={() => prev()}

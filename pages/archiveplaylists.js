@@ -79,7 +79,7 @@ const ArchivePlaylist = ({ data, config }) => {
 
   return (
     <section className="text-gray-600 body-font">
-      <div className="container py-24 mx-auto">
+      <div className="container py-10 mx-auto">
         <center>
           <Leaderboard />
         </center>

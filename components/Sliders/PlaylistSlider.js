@@ -29,10 +29,10 @@ export default function PlaylistSlider({ title, id, category }) {
   const totalSlides = playlists ? playlists.series.length : 0;
 
   const settings = {
-    dots: true,
+    dots: false,
     centerMode: false, // Ensure centerMode is disabled
     variableWidth: false, // Make sure slides have uniform width
-    navigation: false,
+    navigation: true,
     infinite: totalSlides > 5, // Disable infinite if less than 5 slides
     autoplay: false,
     speed: 500,
@@ -80,7 +80,7 @@ export default function PlaylistSlider({ title, id, category }) {
         {playlistTitle}
       </h2> */}
 
-      <h4 className="text-2xl heading mt-40 mobilefont font-bold leading-tight text-gray-800 text-yellow uppercase">{playlistTitle}</h4>
+      <h4 className="text-2xl heading mt-40 mobilefont font-black leading-tight text-gray-800 text-yellow uppercase">{playlistTitle}</h4>
 
       <Slider {...settings}>
             {playlists && playlists.series

@@ -47,8 +47,8 @@ export default function Index() {
           <div className="block mb-4">
             <i className="fas fa-circle-notch animate-spin text-yellow mx-auto text-6xl"></i>
           </div>
-          <h4 className="text-lg font-medium text-yellow">
-            Loading...
+          <h4 className="text-xl text-yellow font-black">
+            LOADING...
           </h4>
         </div>
       </div>
@@ -57,21 +57,22 @@ export default function Index() {
 
   return (
     <>
+
+      <div className='mainSlider bannerMarginCustom'>
+        <center>
+          <MainSlider />
+        </center>
+      </div>
+      
       <section className="homePageMobile">
-        <div className="container-fluid mx-auto items-center flex flex-wrap mt-10">
-          <div className="w-full sm:w-12/12 md:w-12/12 lg:w-12/12 xl:w-12/12 px-4 mt-2 mb-3">
+        <div className="container-fluid mx-auto items-center flex flex-wrap  homepageAdDiv">
+          <div className="w-full sm:w-12/12 md:w-12/12 lg:w-12/12 xl:w-12/12 px-4 mb-3">
             <center>
               <LeaderboardHome />
             </center>
           </div>
         </div>
       </section>
-
-      <div className='mainSlider'>
-        <center>
-          <MainSlider />
-        </center>
-      </div>
 
       {/* <section className="onAir bg-gradient-golden">
         <div className="container">
@@ -90,7 +91,7 @@ export default function Index() {
 
       <section className="pb-40 relative">
         <div className="container mx-auto">
-          <div className="w-full md:w-12/12 lg:w-12/12 xl:w-12/12 px-4 mt-10"></div>
+          <div className="w-full md:w-12/12 lg:w-12/12 xl:w-12/12 px-4 "></div>
           <CardVideos title="LATEST VIDEOS" category="latest" />
           <PlaylistSlider title="ON AIR" id="0" category="QTV ON AIR" />
           <PlaylistSlider title="SHOWS" id="0" category="QTV FEATURED" slides="3" />

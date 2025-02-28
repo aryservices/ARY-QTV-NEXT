@@ -105,7 +105,7 @@ const Namaz = () => {
   if (locationFetching) {
     return (
       <div className="flex items-center justify-center h-screen">
-        <p className="text-dark font-bold text-xl">
+        <p className="text-yellow font-black text-xl">
           Detecting your location...
         </p>
       </div>
@@ -182,7 +182,7 @@ const Namaz = () => {
         </>
       )}
       <section className="text-gray-600 body-font custom-site-bg">
-        <div className="container px-5 py-20 mx-auto">
+        <div className="container px-5  mx-auto NamazPaddingCustom">
           <center>
             <Leaderboard />
           </center>
@@ -201,7 +201,7 @@ const Namaz = () => {
               <br />
 
               {loading ? (
-                <p className="text-dark">Loading Namaz timings...</p>
+                <p className="text-yellow font-black">Loading ...</p>
               ) : prayerData ? (
                 <>
                   <div className="grid grid-cols-7 gap-1 text-center p-2 rounded-md text-white bg-yellow font-semibold daily-text-namaz">
@@ -254,8 +254,8 @@ const Namaz = () => {
                     </h1>
                   </div>
                   {weeklyLoading ? (
-                    <p className="text-dark">
-                      Loading monthly Namaz timings...
+                    <p className="text-yellow font-black">
+                      Loading ...
                     </p>
                   ) : weeklyData.length > 0 ? (
                     <>

@@ -2,10 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/latestvideos": "pages/latestvideos.js",
-  "/schedule": "pages/schedule.js",
-  "/api/namaz": "pages/api/namaz.js",
-  "/namaz-timings": "pages/namaz-timings.js",
-  "/ramadan-timings": "pages/ramadan-timings.js"
+  "/": "pages/index.js"
 }

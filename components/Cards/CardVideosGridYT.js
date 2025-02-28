@@ -80,7 +80,7 @@ export default function CardVideosGrid({ color, title, user, category, platform 
           </div>
 
           {isLoading && (
-            <div className="text-center mt-5">
+            <div className="text-center mt-3">
               <p className="text-yellow">Loading...</p>
             </div>
           )}

@@ -108,7 +108,7 @@ const Namaz = ({ city: initialCity }) => {
       </>
   )}
       <section className="text-gray-600 body-font custom-site-bg">
-        <div className="container px-5 py-20 mx-auto">
+        <div className="container px-5 NamazPaddingCustom mx-auto">
           <center>
             <Leaderboard />
           </center>
@@ -149,17 +149,18 @@ const Namaz = ({ city: initialCity }) => {
 
               <div className=" text-center">
                 <h1 className="text-yellow font-black text-3xl">
-                  Today Namaz Timings
+                  {capitalizeWords(city)} Today Namaz Timings (
+                  {formatDate(prayerData?.date_for)})
                 </h1>
-                <p className="text-yellow mt-1 text-lg font-extrabold text-gray-900">
+                {/* <p className="text-yellow mt-1 text-lg font-extrabold text-gray-900">
                   {capitalizeWords(city)} ({formatDate(prayerData?.date_for)})
-                </p>
+                </p> */}
               </div>
 
               <br />
 
               {loading ? (
-                <p className="text-dark">Loading Namaz timings...</p>
+                <p className="text-yellow font-black">Loading ...</p>
               ) : prayerData ? (
                 <>
                   <div className="grid grid-cols-7 gap-1 text-center p-1 rounded-md text-white bg-yellow font-semibold">
@@ -208,14 +209,13 @@ const Namaz = ({ city: initialCity }) => {
                   </div>
 
                   <div className="mb-6 mt-4 text-center">
-                    <h1 className="text-yellow font-black text-3xl">
-                      Monthly Namaz Timings
+                  <h1 className="text-yellow font-black text-3xl">
+                      {capitalizeWords(city)} Monthly Namaz Timings
                     </h1>
-                    <p className="text-yellow mt-1 text-lg font-extrabold text-gray-900">{capitalizeWords(city)}</p>
                   </div>
                   {weeklyLoading ? (
-                    <p className="text-dark">
-                      Loading monthly Namaz timings...
+                    <p className="text-yellow font-black">
+                      Loading ...
                     </p>
                   ) : weeklyData.length > 0 ? (
                     <>

@@ -30,21 +30,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/latestvideos": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/latestvideos.js"
-    ],
-    "/namaz-timings": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/namaz-timings.js"
-    ],
-    "/ramadan-timings": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/ramadan-timings.js"
-    ],
     "/schedule": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

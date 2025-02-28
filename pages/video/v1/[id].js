@@ -71,7 +71,7 @@ const SingleVideoid = (props) => {
   <meta property="og:title" content={video.title} />
   <meta property="og:description" content={video.description.substring(0, 155)} />
   <meta property="og:image" content={video.thumbnail_720_url} />
-  <meta property="og:url" content={"https://www.arydigital.tv/video/v1/" + video.id} />
+  <meta property="og:url" content={"https://aryqtv.tv/video/v1/" + video.id} />
 
 
   {/* Twitter Card */}
@@ -81,23 +81,23 @@ const SingleVideoid = (props) => {
   <meta name="twitter:image" content={video.thumbnail_720_url} />
 
   {/* Canonical URL */}
-  <link rel="canonical" href={"https://www.arydigital.tv/video/v1/" + video.id} />
+  <link rel="canonical" href={"https://aryqtv.tv/video/v1/" + video.id} />
 
   {/* Favicon */}
-  <link rel="icon" type="image/png" href="https://arydigital.tv/img/ary-qtv-logo.png" />
+  <link rel="icon" type="image/png" href="https://aryqtv.tv/img/ary-qtv-logo.png" />
 </Head>
 
-          <section className="header relative pt-16 items-center flex">
+          <section className="header relative pt-5 items-center flex">
 
             <div className="container mx-auto items-center flex flex-wrap">
-              <div className="w-full md:w-12/12 lg:w-12/12 xl:w-12/12 px-4 mt-3">
+              <div className="w-full md:w-12/12 lg:w-12/12 xl:w-12/12 px-4">
 
                 <center>
                   {/* <Leaderboard key={adRefreshKey} /> */}
                   <Leaderboard/>
                 </center>
               </div>
-              <div className="w-full sm:w-12/12 md:w-9/12 lg:w-9/12 xl:w-12/12 px-4 mt-5">
+              <div className="w-full sm:w-12/12 md:w-9/12 lg:w-9/12 xl:w-12/12 px-4 pt-3">
 
                 <div className="single-video ">
                 {/* <iframe frameborder="0" width="300px" height="100%" 
@@ -125,7 +125,7 @@ const SingleVideoid = (props) => {
 
 
                 </div>
-                <h3 className="text-xl font-bold text-yellow truncate">
+                <h3 className="text-xl font-bold text-yellow truncate mt-2">
                   {video.title}
                 </h3>
               </div>

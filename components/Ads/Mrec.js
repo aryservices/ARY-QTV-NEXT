@@ -16,7 +16,7 @@ export default function LeaderboardHome() {
           <>
             {/* <h1>Dektop</h1> */}
             <GPT
-              adUnitPath="/67551462/ARYDigital_Lrec"
+              adUnitPath="/67551462/Aryqtv_videos_300x250"
               slotSize={[[160, 600], [336, 280], [300, 600], [300, 250]]}
             />
 
@@ -26,7 +26,7 @@ export default function LeaderboardHome() {
           <>
             {/* <h1>Mobile</h1> */}
             <GPT
-              adUnitPath="/67551462/AryDigital-Mobile_Lrec"
+              adUnitPath="/67551462/Aryqtv_videos_300x250"
               slotSize={[[336, 280], [300, 250], [320, 100], [300, 600], [320, 50]]}
             />
           </>

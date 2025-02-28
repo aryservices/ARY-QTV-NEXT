@@ -94,13 +94,13 @@ export default function Schedule() {
   <link rel="icon" type="image/png" href="/img/ary-qtv-logo.png" />
 </Head>
 
-      <section className="container mt-20 pt-1 pb-60">
+      <section className="container schedulePaddingCustom">
 
-      <center className="pb-10">
+      <center className="">
             <Leaderboard />
           </center>
 
-        <ul className="nav nav-tabs" id="myTab" role="tablist">
+        <ul className="nav nav-tabs font-black" id="myTab" role="tablist">
           <li className="nav-item" role="presentation">
             <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#Monday" type="button" role="tab" aria-controls="home" aria-selected="true">Monday</button>
           </li>

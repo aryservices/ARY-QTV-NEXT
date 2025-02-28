@@ -30,12 +30,12 @@ const PlaylistId = ({ data1, id, config }) => {
             />
             <title>
               {playlistDetails.title +
-                " Show | Watch All Latest Episodes in HD"}
+                " Program | Watch All Latest Episodes in HD"}
             </title>
             <meta
               name="description"
               content={
-                "Enjoy all episodes of " +
+                "Watch all episodes of " +
                 playlistDetails.title +
                 " in stunning HD quality. Read reviews, share your thoughts, and stay updated with the latest episodes online."
               }
@@ -73,7 +73,7 @@ const PlaylistId = ({ data1, id, config }) => {
             <meta
               property="og:description"
               content={
-                "Enjoy all episodes of " +
+                "Watch all episodes of " +
                 playlistDetails.title +
                 " in stunning HD quality. Read reviews, share your thoughts, and stay updated with the latest episodes online."
               }
@@ -93,13 +93,13 @@ const PlaylistId = ({ data1, id, config }) => {
               name="twitter:title"
               content={
                 playlistDetails.title +
-                " Drama | Watch All Latest Episodes in HD"
+                " Program | Watch All Latest Episodes in HD"
               }
             />
             <meta
               name="twitter:description"
               content={
-                "Enjoy all episodes of " +
+                "Watch all episodes of " +
                 playlistDetails.title +
                 " in stunning HD quality. Read reviews, share your thoughts, and stay updated with the latest episodes online."
               }
@@ -108,8 +108,8 @@ const PlaylistId = ({ data1, id, config }) => {
               name="twitter:image"
               content={config.appImagePath + playlistDetails.imageCoverMobile}
             />
-            <meta name="twitter:site" content="@ARYDigitalAsia" />
-            <meta name="twitter:creator" content="@ARYDigitalAsia" />
+            <meta name="twitter:site" content="@ARTQTV" />
+            <meta name="twitter:creator" content="@ARTQTV" />
 
             {/* Canonical URL */}
             <link
@@ -124,21 +124,20 @@ const PlaylistId = ({ data1, id, config }) => {
               href="https://aryqtv.tv/img/ary-qtv-logo.png"
             />
           </Head>
-          #f8f2db
           <div className="mt-10  mx-auto mb-minus relative">
             {/* Background Image Div */}
             <div
               className="absolute top-0 left-0 w-full h-full"
               style={{
                 backgroundColor: "hsl(0deg 0% 0%)",
-                backgroundImage: `url('/img/qtv-banner.webp')`,
+                backgroundImage: `url('/img/qtv-banner-blurred.webp')`,
                 // backgroundImage: `linear-gradient(to left,rgba(248, 242, 219, 0.77),rgba(248, 242, 219, 0.72)), url(${
                 //   config.appImagePath + playlistDetails.imageCoverDesktop
                 // })`,
                 backgroundAttachment: "fixed",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                // boxShadow: "2px -62px 89px 10px rgba(0,0,0,1) inset",
+                // boxShadow: "2px -62px 89px 10px rgba(248, 242, 219, 0.77) inset",
                 // transform: "scaleX(-1)", // Flips background image horizontally
                 zIndex: 0,
               }}
@@ -150,23 +149,23 @@ const PlaylistId = ({ data1, id, config }) => {
                 <div className="mx-auto">
                   <div className="grid items-center gap-2 lg:grid-cols-2">
                     <div className="lg:mt-0 px-6 py-3 md:px-12 contentDiv">
-                    <h1 className="mb-6 text-yellow text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+                    <h1 className="mb-6 text-light-bg text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
                           {playlistDetails.title}
                         </h1>
-                      <p className="text-lg text-yellow">
+                      <p className="text-lg text-light-bg">
                         {playlistDetails.description}
                       </p>
 
                       {playlistDetails.categoryId[0].title !==
                         "DRAMA ARCHIVE" && playlistDetails.time ? (
-                        <div className="mt-6 px-0">
+                        <div className="mt-6 px-0 ">
                           <button
-                            className="text-yellow active:bg-blueGray-600 text-xs font-bold uppercase rounded outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                            className="text-light-bg active:bg-blueGray-600 text-xs font-bold uppercase rounded outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                             type="button"
                           >
-                            <i className="fas fa-clock"></i>{" "}
+                            <i className="fas fa-clock text-light-bg"></i>{" "}
                             {`${playlistDetails.time} - `}{" "}
-                            <i className="fas fa-calendar"></i>{" "}
+                            <i className="fas fa-calendar text-light-bg"></i>{" "}
                             {` ${playlistDetails.day}`}
                           </button>
                         </div>
@@ -199,7 +198,7 @@ const PlaylistId = ({ data1, id, config }) => {
       )}
 
       {/* Videos Section */}
-      <section className="text-gray-600 body-font  mb-60 mt-20 pt-1">
+      <section className="text-gray-600 body-font mb-60 mt-4 pt-1">
         <div className="container-fluid mx-auto">
           <center>
             <Leaderboard />

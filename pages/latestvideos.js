@@ -26,7 +26,7 @@ const CardVideos = ({ config, playlists, error }) => {
 
   return (
     <section className="text-gray-600 body-font">
-      <div className="container py-24 mx-auto mobileVideosPadding">
+      <div className="container py-10 mx-auto mobileVideosPadding">
         <center>
           <Leaderboard />
         </center>

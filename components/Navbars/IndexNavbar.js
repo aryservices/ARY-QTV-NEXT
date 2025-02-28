@@ -95,7 +95,7 @@ export default function Navbar(props) {
                   <i className="text-yellow-light fas fa-tv text-md leading-lg mr-2" /> Programs
                   <i className="fas fa-chevron-down ml-2 text-sm"></i>
                 </button>
-                <ul className={`absolute left-0 mt-2 w-48 bg-yellow-light2 custom-dropdown text-yellow shadow-lg rounded-md ${dropdownOpen ? "block" : "hidden"}`}>
+                <ul className={`absolute left-0 mt-0 w-48 bg-yellow-light2 custom-dropdown font-black text-yellow shadow-lg rounded-md ${dropdownOpen ? "block" : "hidden"}`}>
                   <Link href="/on-air">
                     <li className=" px-4 py-2 hover:text-white hover:bg-yellow cursor-pointer" onClick={() => setDropdownOpen(false)}>
                       ON AIR
@@ -103,12 +103,12 @@ export default function Navbar(props) {
                   </Link>
                   <Link href="/popularplaylists">
                     <li className=" px-4 py-2 hover:bg-yellow cursor-pointer" onClick={() => setDropdownOpen(false)}>
-                      Popular
+                      POPULAR
                     </li>
                   </Link>
                   <Link href="/archiveplaylists">
                     <li className=" px-4 py-2 hover:bg-yellow cursor-pointer" onClick={() => setDropdownOpen(false)}>
-                      Archive
+                      ARCHIVE
                     </li>
                   </Link>
                 </ul>
@@ -126,7 +126,7 @@ export default function Navbar(props) {
                   className="hover:text-white-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold cursor-pointer"
                   onClick={() => setNavbarOpen(false)} // Close menu on click
                 >
-                  <i className="text-yellow-light fas fa-clock text-md leading-lg mr-2" /> EDITORIAL
+                  <i className="text-yellow-light fas fa-blog text-md leading-lg mr-2" /> EDITORIAL
                 </li>
               </Link> */}
               <Link href="/namaz-timings">
@@ -202,7 +202,7 @@ export default function Navbar(props) {
               <Link href="https://live.aryqtv.tv/">
                 <li className="flex items-end">
                   <button
-                    className="text-yellow bg-yellow-light2 active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                    className="text-yellow bg-yellow-light2 active:bg-blueGray-600 text-xs font-black uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                     type="button"
                   >
                     <i className="fas fa-tv"></i> Watch LIVE

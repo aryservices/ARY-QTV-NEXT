@@ -84,7 +84,7 @@ useEffect(() => {
     } 
   />
   <meta property="og:image" content={video.snippet.thumbnails.maxres.url} />
-  <meta property="og:url" content={"https://www.arydigital.tv/video/v1/" + video.id} />
+  <meta property="og:url" content={"https://aryqtv.tv/video/v1/" + video.id} />
 
 
   {/* Twitter Card */}
@@ -106,10 +106,10 @@ useEffect(() => {
   <meta name="twitter:image" content={video.snippet.thumbnails.maxres.url} />
 
   {/* Canonical URL */}
-  <link rel="canonical" href={"https://www.arydigital.tv/video/v2/" + video.id} />
+  <link rel="canonical" href={"https://aryqtv.tv/video/v2/" + video.id} />
 
   {/* Favicon */}
-  <link rel="icon" type="image/png" href="https://arydigital.tv/img/ary-qtv-logo.png" />
+  <link rel="icon" type="image/png" href="https://aryqtv.tv/img/ary-qtv-logo.png" />
 </Head>
 
           <section className="header relative pt-16 items-center flex">

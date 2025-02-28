@@ -125,7 +125,7 @@ const Ramadan = () => {
   if (locationFetching) {
     return (
       <div className="flex items-center justify-center h-screen">
-        <p className="text-dark font-bold text-xl">
+        <p className="text-yellow font-black text-xl">
           Detecting your location...
         </p>
       </div>
@@ -197,7 +197,7 @@ const Ramadan = () => {
         </>
       )}
       <section className="text-gray-600 body-font custom-site-bg">
-        <div className="container px-5 py-20 mx-auto">
+        <div className="container px-5 NamazPaddingCustom mx-auto">
           <center>
             <Leaderboard />
           </center>
@@ -213,7 +213,7 @@ const Ramadan = () => {
               <br />
 
               {loading ? (
-                <p className="text-dark">Loading Ramadan timings...</p>
+                <p className="text-yellow font-black">Loading ...</p>
               ) : prayerData ? (
                 <>
                   <div className="grid grid-cols-3 gap-1 text-center p-3 rounded-md text-white bg-yellow font-semibold daily-text">
@@ -258,8 +258,8 @@ const Ramadan = () => {
                     </h1>
                   </div>
                   {weeklyLoading ? (
-                    <p className="text-dark">
-                      Loading monthly Ramadan timings...
+                    <p className="text-yellow font-black">
+                      Loading ...
                     </p>
                   ) : weeklyData.length > 0 ? (
                     <>
