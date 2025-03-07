@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import Head from "next/head";
 import axios from "axios";
-import Leaderboard from "../components/Ads/Leaderboard";
+import Leaderboard from "../../components/Ads/Leaderboard";
 
 const Namaz = () => {
   // (New) Start with a fallback city (e.g. "{city}") while we detect IP-based location
@@ -121,67 +121,46 @@ const Namaz = () => {
       {city && (
         <>
           <Head>
-            <title>
-              {capitalizeWords(city)} Namaz Timings Today - Prayer Times for
-              Fajr, Dhuhr, Asr, Maghrib & Isha
-            </title>
-            <meta
-              name="description"
-              content={`Find accurate ${city} Namaz Timings for today. Get daily updated prayer times for Fajr, Dhuhr, Asr, Maghrib, and Isha. Stay informed with ARY QTV Islamic prayer schedule.`}
-            />
-            <meta
-              name="keywords"
-              content={`${city} namaz timings, prayer times ${city}, ${city} prayer schedule, Islamic prayer times ${city}, fajr time ${city}, maghrib time ${city}, ARY QTV prayer timings`}
-            />
+  <title>
+    {capitalizeWords(city)} Namaz Timings Today - Prayer Times for
+    Fajr, Dhuhr, Asr, Maghrib & Isha
+  </title>
+  <meta
+    name="description"
+    content={`Find accurate ${city} Namaz Timings for today. Get daily updated prayer times for Fajr, Dhuhr, Asr, Maghrib, and Isha. Stay informed with ARY QTV Islamic prayer schedule.`}
+  />
+  <meta
+    name="keywords"
+    content={`${city} namaz timings, prayer times ${city}, ${city} prayer schedule, Islamic prayer times ${city}, fajr time ${city}, maghrib time ${city}, ARY QTV prayer timings`}
+  />
 
-            {/* <!-- Canonical URL (Avoids Duplicate Content Issues) --> */}
-            <link
-              rel="canonical"
-              href={`https://aryqtv.tv/namaz-timings/${city}`}
-            />
+  {/* Canonical URL */}
+  <link rel="canonical" href={`https://aryqtv.tv/namaz-timings/${city}`} />
 
-            {/* <!-- Open Graph Meta Tags (For Social Media Sharing) --> */}
-            <meta
-              property="og:title"
-              content={`${capitalizeWords(
-                city
-              )} Namaz Timings Today - Prayer Times for Fajr, Dhuhr, Asr, Maghrib & Isha`}
-            />
-            <meta
-              property="og:description"
-              content={`Find accurate ${city} Namaz Timings for today. Get daily updated prayer times for Fajr, Dhuhr, Asr, Maghrib, and Isha. Stay informed with ARY QTV Islamic prayer schedule.`}
-            />
-            <meta
-              property="og:url"
-              content={`https://aryqtv.tv/namaz-timings/${city}`}
-            />
-            <meta property="og:site_name" content="ARY QTV" />
-            <meta property="og:type" content="website" />
-            {/* <meta property="og:image" content="https://aryqtv.tv/assets/images/{city}-namaz-timings.jpg" /> */}
+  {/* Open Graph Meta Tags */}
+  <meta property="og:title" content={`${capitalizeWords(city)} Namaz Timings Today - Prayer Times for Fajr, Dhuhr, Asr, Maghrib & Isha`} />
+  <meta property="og:description" content={`Find accurate ${city} Namaz Timings for today. Get daily updated prayer times for Fajr, Dhuhr, Asr, Maghrib, and Isha. Stay informed with ARY QTV Islamic prayer schedule.`} />
+  <meta property="og:url" content={`https://aryqtv.tv/namaz-timings/${city}`} />
+  <meta property="og:site_name" content="ARY QTV" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content={`https://aryqtv.tv/assets/images/${city}-namaz-timings.jpg`} />
 
-            {/* <!-- Twitter Card Meta Tags --> */}
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta
-              name="twitter:title"
-              content={`${capitalizeWords(
-                city
-              )} Namaz Timings Today - Prayer Times for Fajr, Dhuhr, Asr, Maghrib & Isha`}
-            />
-            <meta
-              name="twitter:description"
-              content={`Find accurate ${city} Namaz Timings for today. Get daily updated prayer times for Fajr, Dhuhr, Asr, Maghrib, and Isha. Stay informed with ARY QTV Islamic prayer schedule.`}
-            />
-            {/* <meta name="twitter:image" content="https://aryqtv.tv/assets/images/{city}-namaz-timings.jpg" /> */}
+  {/* Twitter Meta Tags */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={`${capitalizeWords(city)} Namaz Timings Today - Prayer Times for Fajr, Dhuhr, Asr, Maghrib & Isha`} />
+  <meta name="twitter:description" content={`Find accurate ${city} Namaz Timings for today. Get daily updated prayer times for Fajr, Dhuhr, Asr, Maghrib, and Isha. Stay informed with ARY QTV Islamic prayer schedule.`} />
+  <meta name="twitter:image" content={`https://aryqtv.tv/assets/images/${city}-namaz-timings.jpg`} />
 
-            {/* <!-- Robots Meta Tag (Ensures Indexing & Following Links) --> */}
-            <meta name="robots" content="index, follow" />
+  {/* Robots Meta Tag */}
+  <meta name="robots" content="index, follow" />
 
-            {/* <!-- Viewport for Mobile Responsiveness --> */}
-            {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+  {/* Viewport for Mobile Responsiveness */}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-            {/* <!-- Favicon --> */}
-            {/* <link rel="icon" href="https://aryqtv.tv/favicon.ico" type="image/x-icon" /> */}
-          </Head>
+  {/* Favicon */}
+  <link rel="icon" href="https://aryqtv.tv/favicon.ico" type="image/x-icon" />
+</Head>
+
         </>
       )}
       <section className="text-gray-600 body-font custom-site-bg">
@@ -335,5 +314,13 @@ const Namaz = () => {
     </>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      metaOverride: true, // Tells _app.js that this page has its own meta
+    },
+  };
+}
 
 export default Namaz;

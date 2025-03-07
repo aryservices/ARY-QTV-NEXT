@@ -3,7 +3,7 @@ import Head from "next/head";
 import axios from "axios";
 import Leaderboard from "../../components/Ads/Leaderboard";
 
-const Namaz = ({ city: initialCity }) => {
+const Namaz = ({ initialCity }) => {
   // Default to "Karachi" if no city is provided from query
   const [city, setCity] = useState(initialCity || "Karachi");
   const [prayerData, setPrayerData] = useState(null);
@@ -260,11 +260,10 @@ const Namaz = ({ city: initialCity }) => {
   );
 };
 
-// This gets called on every request
+// Extract city from slug
 export async function getServerSideProps(context) {
-  const { city } = context.query;
-  // Pass the city to the component (falls back to "Karachi" if undefined)
-  return { props: { city: city || null } };
+  const { slug } = context.params || {};
+  const city = slug ? slug.replace("-today-namaz-timings", "").replace("-", " ") : "Karachi";
+  return { props: { initialCity: city, metaOverride: true } }; // Ensure metaOverride is true
 }
-
 export default Namaz;

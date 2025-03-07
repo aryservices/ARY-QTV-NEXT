@@ -57,6 +57,7 @@ export default function Index() {
 
   return (
     <>
+      
 
       <div className='mainSlider bannerMarginCustom'>
         <center>

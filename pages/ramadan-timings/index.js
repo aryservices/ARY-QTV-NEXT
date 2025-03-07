@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import axios from "axios";
-import Leaderboard from "../components/Ads/Leaderboard";
+import Leaderboard from "../../components/Ads/Leaderboard";
 
 const Ramadan = () => {
   // (New) Start with a fallback city (e.g. "Karachi") while we detect IP-based location

@@ -182,7 +182,7 @@ export async function getServerSideProps(context) {
   const data1 = await res1.json()
 
   // Pass data to the page via props
-  return { props: { data, data1 } }
+  return { props: { data, data1, metaOverride: true } }
 }
 
 export default SingleVideoid;
