@@ -5,7 +5,6 @@ node_modules/
 .next/
 
 # Environment variables
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -24,7 +23,6 @@ pnpm-debug.log*
 Thumbs.db
 
 # Editor-specific files
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -41,3 +39,7 @@ coverage/
 # Ignore lockfiles if using a different package manager
 yarn.lock
 pnpm-lock.yaml
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
